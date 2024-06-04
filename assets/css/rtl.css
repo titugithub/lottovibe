@@ -1,0 +1,416 @@
+html {
+  direction: rtl;
+}
+body {
+  direction: rtl;
+  unicode-bidi: embed;
+  text-align: right;
+}
+
+body.rtl .menu-area .icon2 .navbar ul > li.menu-item-has-children > a:before {
+    left: 0 !important;
+    right: auto !important;
+}
+body.rtl .menu-area .navbar ul li .sub-menu li ul {
+    right: 100% !important;
+    left: auto;
+}
+body.rtl .menu-area .navbar ul li .sub-menu {
+    right: 0;
+}
+body.rtl .menu-area .navbar ul li a {
+    padding-left: 16px;
+    padding-right: 0;
+}
+
+body.rtl .menu-area .navbar ul > li.menu-item-has-children a {
+    margin-left: 18px;
+    margin-right: 0;
+}
+body.rtl .menu-area .navbar ul li ul.sub-menu li{
+    text-align: right;
+}
+body.rtl .menu-area .navbar ul > li.menu-item-has-children ul.sub-menu li a {
+    margin-left: 0;
+    margin-right: 0;
+}
+body.rtl .bs-search button {
+    left: 0;
+    right: auto;
+}
+body.rtl .close-search {
+    left: 50px;
+    right: auto;
+}
+
+body.rtl .menu-wrap-off {
+    right: auto;
+    left: 0;
+    transform: translate3d(-520px, 0, 0);
+}
+
+body.rtl .menu-ofcn.off-open {
+    transform: translate3d(0, 0, 0);
+}
+body.rtl .btn-watch-video span.text {
+    left: -100px;
+    right: auto;
+    top: 7px;
+}
+
+body.rtl .rtl--arriw .left_icon_yes ul li a:before {
+    transform: rotate(180deg);
+}
+
+body.rtl .footer-width-fixer .menu-area .navbar ul li a {
+    padding-left: 0;
+}
+
+body.rtl .footer-width-fixer .menu-area .right_icon_yes .navbar ul li a {
+    padding-right: 24px !important;
+}
+
+body.rtl .right_icon_yes ul li a:after {
+    transform: rotate(180deg);
+}
+
+body.rtl .footer-top-content .elementor-icon-box-icon{
+    margin-left: 15px;
+}
+body.rtl .air-condition-swiper-wrapper .swiper-wrapper .swiper-slide .single-case-ac .inner-content .inner {
+    right: 40px;
+    top: 16px;
+}
+body.rtl .inner-content-lottovite-blog .head .single i {
+    margin-left: 10px;
+}
+body.rtl .react-video .popup-videos i {
+  text-indent: -2px;
+  transform: rotate(180deg);
+}
+body.rtl .single-lottovite-steps-start .thumbnail .steps {
+    right: 0;
+    border-radius: 10px 0 0 0;
+    left: auto;
+}
+body.rtl.woocommerce.single-product .product-type-simple .summary .cart .quantity {
+    margin: 0;
+    margin-left: 20px;
+}
+
+body.rtl .single-lottovite-service-start a.read-more-btn i {
+    margin-right: 10px;
+    transform: rotate(180deg);
+    margin-top: -3px;
+}
+
+body.rtl .elementor-widget-icon-box.elementor-position-left .elementor-icon-box-icon {
+    margin-left: 15px;
+    order: 2;
+}
+
+body.rtl.single-post .react-order-list li {
+    padding-right: 22px;
+    padding-left: 0;
+}
+body.rtl.single-post .react-order-list li:before {
+    right: 0;
+    left: auto;
+}
+body.rtl .reactheme-blog-details .author-block .author-img {
+    float: right;
+    padding-left: 30px;
+    padding-right: 0;
+}
+
+body.rtl .reactheme-blog-details .author-block .author-desc {
+    text-align: right;
+}
+
+body.rtl .react-sideabr .widget_block label.wp-block-search__label:after, 
+body.rtl .react-sideabr .widget_block h2:after, 
+body.rtl .react-sideabr .widget-title:after {
+    right: 0;
+    left: auto;
+}
+body.rtl .react-sideabr .bs-search button {
+    left: 0;
+    right: auto;
+}
+body.rtl .react-sideabr .widget_search input, 
+body.rtl .react-sideabr .bs-search input {
+    padding-left: 65px;
+    padding-right: 20px;
+}
+body.rtl .show-featured .post-img {
+    float: right;
+    padding-right: 0;
+    padding-left: 25px;
+}
+
+body.rtl .react-sideabr .widget_categories ul li span, 
+body.rtl .react-sideabr .widget_archive ul li span, 
+body.rtl .react-sideabr .widget_pages ul li span, 
+body.rtl .react-sideabr .widget_meta ul li span, 
+body.rtl .react-sideabr .widget_recent_entries ul li span, 
+body.rtl .react-sideabr .widget_nav_menu ul li span, 
+body.rtl .react-sideabr .widget_block ul li span {
+    float: left;
+}
+
+body.rtl .reactheme-breadcrumbs .breadcrumbs-title span span {
+    margin-left: 4px;
+    margin-right: 0;
+    padding-left: 10px;
+    padding-right: 0;
+}
+
+body.rtl .reactheme-breadcrumbs .breadcrumbs-title span a:before {
+    left: 4px;
+    right: auto;
+}
+
+body.rtl.single-post .reactheme-blog-details .type-post .single-content-full .user-info .single-info {
+    margin-left: 30px;
+    margin-right: 0;
+}
+
+body.rtl .reactheme-blog-grid.blog--style1 .blog-item .blog-meta li {
+    margin-left: 30px;
+    margin-right: 0;
+}
+
+body.rtl .reactheme-blog-grid.blog--style1 .blog-item .blog-meta li i {
+    margin-left: 2px;
+    margin-right: 0;
+}
+
+body.rtl.blog .reactheme-blog .blog-item .full-blog-content .user-info .single-info, 
+body.rtl.archive .reactheme-blog .blog-item .full-blog-content .user-info .single-info {
+    margin-left: 30px;
+    margin-right: 0;
+}
+
+body.rtl.blog .reactheme-blog .blog-item .full-blog-content .user-info .single-info i, 
+body.rtl.archive .reactheme-blog .blog-item .full-blog-content .user-info .single-info i {
+    margin-left: 7px;
+    margin-right: 0;
+}
+
+body.rtl .rt-features-list-content ul {
+    display: block;
+}
+
+body.rtl .rt-features-list-portfolio-content .info-body .single-info .info-details {
+    margin-right: 20px;
+    margin-left: 0;
+}
+
+body.rtl.single .reactheme-porfolio-details .ps-navigation .rts-left-write-blog-wrapper-main .right-icon-area {
+    text-align: left;
+}
+body.rtl.single .reactheme-porfolio-details .ps-navigation .rts-left-write-blog-wrapper-main .right-icon-area .icon-1{
+    transform: rotate(180deg);
+}
+body.rtl.single .reactheme-porfolio-details .ps-navigation .rts-left-write-blog-wrapper-main .left-icon-area {
+    text-align: right;
+}
+body.rtl.single .reactheme-porfolio-details .ps-navigation .rts-left-write-blog-wrapper-main .left-icon-area .icon-1{
+    transform: rotate(180deg);
+}
+
+body.rtl .single-project-lottovite-h3 .name-social-area-wrapper {
+    width: 93%;
+}
+
+body.rtl .rt-portfolio-style1 .portfolio-item .portfolio-content {
+    right: 15px;
+    left: auto;
+}
+
+body.rtl .rts-single-testimonials-one .awener-area a {
+    margin-left: 12px;
+    margin-right: 0;
+}
+
+body.rtl .service-single-s-main a.rts-read-more-btn i {
+    margin-right: 0px;
+    margin-left: 0;
+    transform: rotate(-100deg);
+    display: inline-block;
+}
+
+body.rtl .num-icon {
+    left: 20px;
+    right: auto;
+}
+
+body.rtl .single-service-style-four-h4 {
+    border-left: 1px solid #EFEFEF;
+    border-right: none;
+}
+
+body.rtl .single-service-start .inner-content a.rts-btn i {
+    margin-right: 0;
+    margin-left: 0;
+    transform: rotate(180deg);
+}
+
+body.rtl .rts-single-testimonials-one .awener-area a {
+    margin-left: 12px;
+    margin-right: 0;
+}
+
+body.rtl .single-feature-soalri-3 a.read-more-btn i {
+    margin-right: 10px;
+    margin-bottom: 0;
+    margin-left: 0;
+    transform: rotate(180deg);
+}
+
+body.rtl .rt-blog-slider.slider-style-1 .blog-item .blog_content{
+    text-align: right;
+}
+
+body.rtl .rt-blog-slider.slider-style-1 .blog-item .blog-meta li i {
+    margin-left: 2px;
+    margin-right: 0;
+}
+
+body.rtl .rt-blog-slider.slider-style-1 .blog-item .blog-meta li {
+    margin-left: 30px;
+    margin-right: 0;
+}
+
+body.rtl .testimonial_slider_wraper .swiper-pagination-bullets {
+    text-align: right;
+}
+
+body.rtl.single-teams .adress-box .address-content {
+    margin-right: 15px;
+    margin-left: 0;
+}
+
+body.rtl .rs-skill-bar.style1 .skillbar .skill-bar-percent {
+    right: auto;
+    left: 0;
+}
+
+body.rtl.woocommerce.single-product .product-type-variable .summary .cart .single_add_to_cart_button:before, 
+body.rtl.woocommerce.single-product .product-type-external .summary .cart .single_add_to_cart_button:before, 
+body.rtl.woocommerce.single-product .product-type-grouped .summary .cart .single_add_to_cart_button:before, 
+body.rtl.woocommerce.single-product .product-type-simple .summary .cart .single_add_to_cart_button:before {
+    margin-left: 10px;
+    padding-left: 10px;
+    margin-right: 0px;
+    padding-right: 0px;
+}
+
+body.rtl.woocommerce-checkout .woocommerce form.checkout #customer_details {
+    padding-left: 30px;
+    padding-right: 0;
+}
+
+body.rtl .btn-faq {
+    left: 0;
+    right: auto;
+}
+
+body.rtl .appoinment-year .counter-top-area {
+    padding: 31px 30px 35px 21px;
+}
+
+body.rtl .counter-top-area.style3 .rts-counter-list .count-text .title {
+    margin-left: 0;
+    margin-right: 25px;
+}
+
+body.rtl .single-service-start .image-area .icon {
+    right: 30px;
+    left: auto;
+}
+
+body.rtl .rts-about-left-image-area .small-image-area p {
+    margin-right: 30px;
+    margin-left: 0;
+}
+
+body.rtl .price__btn_rtl .price-btn{
+    text-align: right;
+}
+
+body.rtl .abouttabarea ul li button.nav-link .icon {
+    margin-left: 15px;
+    margin-right: 0;
+}
+body.rtl .single-project-lottovite-h3 .name-social-area-wrapper {
+    right: 20px;
+    left: 20px;
+    width: auto !important;
+}
+body.rtl .our-latest-project-area .swipper-bulet-pagination {
+    left: 50px;
+    right: auto;
+}
+
+body.rtl .single-service-area-6 .inner-content {
+    right: 30px;
+    left: auto;
+}
+
+body.rtl .single-service-area-6 .inner-content .fa.fa-arrow-right{
+    transform: rotate(180deg);
+}
+
+body.rtl .blog-style-four .inner-content-blog {
+    right: 30px;
+    left: auto;
+}
+
+body.rtl .single-category .single-category .arrow-btn-lottovite i{
+    margin-right: 10px;
+    margin-left: 0;
+    transform: rotate(180deg);
+}
+
+body.rtl .single-featue-item {
+    padding: 30px 30px 30px 30px;
+}
+
+body.rtl .mf-form-wrapper .metform-form-content .metform-form-main-wrapper .mf-input-wrapper .mf-input{
+    text-align: right;
+}
+body.rtl .btnn-icon .elementor-icon-box-icon span.elementor-icon.elementor-animation-{
+    margin-left: 16px;
+}
+body.rtl.tax-rt-portfolio-category #content{
+    padding-top: 100px;
+    padding-bottom: 90px;
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1599px){
+    body.rtl .our-latest-project-area .swipper-bulet-pagination {
+        left: 20px;
+        right: auto;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    body.rtl .rt-blog-slider.slider-style-1 .blog-item .blog-meta li {
+        margin-left: 15px !important;
+        margin-right: 0px !important;
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1599px){
+    body.rtl .single-product-main-four p {
+        padding: 0 0 0 70px;
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1599px){
+    body.rtl .single-blog-lottovitec-sm .inner-content-lottovite-blog {
+        margin-right: 30px;
+        margin-left: 0;
+    }
+}
