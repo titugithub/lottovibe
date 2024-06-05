@@ -1,5 +1,8 @@
 
 jQuery(function ($) {
+
+
+
   
   $(document).ready(function () {
     $(".title").attr({
