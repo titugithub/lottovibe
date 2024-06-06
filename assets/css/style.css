@@ -9606,7 +9606,7 @@ iframe {
 }
 
 .real-estate-video.freature-videobg {
-  background: url(../../assets/images/howit/m-feature-bg.png) no-repeat center center !important;
+  /* background: url(../../assets/images/howit/m-feature-bg.png) no-repeat center center !important; */
   background-size: cover !important;
   background-attachment: fixed !important;
 }
@@ -10747,7 +10747,7 @@ iframe {
 }
 
 .real-estate-video {
-  background: url(../../assets/images/howit/how-competition-bg.png) no-repeat center center !important;
+  /* background: url(../../assets/images/howit/how-competition-bg.png) no-repeat center center !important; */
   background-size: cover !important;
   background-attachment: fixed !important;
   height: 670px;
