@@ -1201,3 +1201,37 @@ span.n3-clr.fw_600 .woocommerce-Price-currencySymbol {
     justify-content: center;
     margin-top: 80px;
 }
+.blog-section  .pagination a {
+    background: #E9F2FF !important;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--n4);
+    font-weight: 700;
+}
+
+.blog-section .pagination a:hover {
+    background: var(--s1) !important;
+    color: var(--nw1) !important;
+}
+
+.blog-section span.page-numbers.current{
+	background: var(--s1) !important;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--nw1) !important;
+    font-weight: 700;
+}
+
+.blog-section .pagination {
+    gap: 10px;
+    justify-content: center;
+    margin-top: 80px;
+}
