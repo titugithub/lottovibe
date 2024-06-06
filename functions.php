@@ -148,6 +148,7 @@ add_image_size( 'project-details-four',312, 360, true );
 add_image_size( 'team-home-three',312, 220, true );
 add_image_size( 'poject-four',948, 700, true );
 add_image_size( 'lottovite-blog-grid-small',232, 232, true );
+add_image_size( 'lottovite-blog-gridtwo',416, 500, true );
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
