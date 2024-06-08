@@ -1235,3 +1235,14 @@ span.n3-clr.fw_600 .woocommerce-Price-currencySymbol {
     justify-content: center;
     margin-top: 80px;
 }
+
+.cccc span.elementor-counter-number, .cccc span.elementor-counter-number-suffix {
+    font-size: unset;
+    color: unset;
+    font-weight: unset;
+    line-height: unset;
+}
+
+.cccc span.elementor-counter-number-suffix {
+    color: var(--act4) !important;
+}
