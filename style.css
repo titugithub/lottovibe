@@ -1246,3 +1246,10 @@ span.n3-clr.fw_600 .woocommerce-Price-currencySymbol {
 .cccc span.elementor-counter-number-suffix {
     color: var(--act4) !important;
 }
+
+.winningimg img{
+	animation: balls 5s linear infinite;
+}
+.winningimg2 img{
+	animation: dimod 2s linear infinite
+}
