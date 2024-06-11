@@ -1268,3 +1268,12 @@ span.n3-clr.fw_600 .woocommerce-Price-currencySymbol {
 body div textarea:focus {
     outline: none !important
 }
+
+ul.pri-link li a{
+	color: var(--n0) !important;
+}
+
+span.elementor-edit-link-title {
+    color: #fff;
+    display: inline;
+}
