@@ -1277,3 +1277,7 @@ span.elementor-edit-link-title {
     color: #fff;
     display: inline;
 }
+
+.header-inner.sticky-menu {
+    background: var(--bg1);
+}
