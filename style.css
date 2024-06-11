@@ -1280,4 +1280,13 @@ span.elementor-edit-link-title {
 
 .header-inner.sticky-menu {
     background: var(--bg1);
+	
+}
+
+.reactheme-breadcrumbs .breadcrumbs-inner {
+    padding-top: 220px;
+}
+
+#reactheme-header {
+    z-index: 999 !important;
 }
