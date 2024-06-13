@@ -1290,3 +1290,7 @@ span.elementor-edit-link-title {
 #reactheme-header {
     z-index: 999 !important;
 }
+
+.cart-icon-total-products.visible-cart {
+    z-index: 9999 !important;
+}

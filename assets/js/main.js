@@ -313,6 +313,27 @@ jQuery(function ($) {
   // =================End default js===============================//
 
 
+  
+    // on window scroll
+$(document).ready(function() {
+  // position navbar on scroll
+  var scroll = $(window).scrollTop();
+  if (scroll >= 100) {
+      $(".header").addClass(".header-inner.sticky-menu");
+      
+  }
+
+  $(window).on("scroll", function () {
+      var scroll = $(window).scrollTop();
+      if (scroll < 100) {
+          $(".header").removeClass(".header-inner.sticky-menu");
+      } else {
+          $(".header").addClass(".header-inner.sticky-menu");
+      }
+  }).scroll(); // Triggering the scroll event on page load
+});
+
+
 
   
   $(document).ready(function () {
