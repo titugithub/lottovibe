@@ -1,10 +1,10 @@
 <?php
-global $solari_option;
+global $lottovite_option;  
 $header_width_meta = get_post_meta(get_the_ID(), 'header_width_custom', true);
 if ($header_width_meta != '') {
   $header_width = ($header_width_meta == 'full') ? 'container-fluid' : 'container';
 } else {
-  $header_width = !empty($solari_option['header-grid']) ? $solari_option['header-grid'] : '';
+  $header_width = !empty($lottovite_option['header-grid']) ? $lottovite_option['header-grid'] : '';
   $header_width = ($header_width == 'full') ? 'container-fluid' : 'container';
 }
 ?>
@@ -14,11 +14,11 @@ $post_meta_data = get_post_meta(get_the_ID(), 'banner_image', true);
 $post_meta_data2 = '';
 //theme option chekcing
 if ($post_meta_data == '') {
-  if (!empty($solari_option['page_banner_main']['url'])) :
-    $post_meta_data = $solari_option['page_banner_main']['url'];
+  if (!empty($lottovite_option['page_banner_main']['url'])) :
+    $post_meta_data = $lottovite_option['page_banner_main']['url'];
 
   else : {
-      $post_meta_data2 = !empty($solari_option['breadcrumb_bg_color']) ? $solari_option['breadcrumb_bg_color'] : '';
+      $post_meta_data2 = !empty($lottovite_option['breadcrumb_bg_color']) ? $lottovite_option['breadcrumb_bg_color'] : '';
     }
   endif;
 }
@@ -68,11 +68,11 @@ $intro_content_banner = get_post_meta(get_the_ID(), 'intro_content_banner', true
                 ?>
             </div>
             <div class="col-lg-12 col-md-12 ffdd">
-              <?php if (!empty($solari_option['off_breadcrumb'])) {
+              <?php if (!empty($lottovite_option['off_breadcrumb'])) {
                   $rs_breadcrumbs = get_post_meta(get_the_ID(), 'select-bread', true);
                   if ($rs_breadcrumbs != 'hide') :
                     if (function_exists('bcn_display')) { ?>
-                    <div class="breadcrumbs-title"> <?php bcn_display(); ?></div>
+                    <div class="breadcrumbs-title "> <?php bcn_display(); ?></div>
               <?php }
                   endif;
                 } ?>
@@ -94,11 +94,11 @@ $intro_content_banner = get_post_meta(get_the_ID(), 'intro_content_banner', true
 
 
             <div class="col-lg-12 text-lg-center">
-              <?php if (!empty($solari_option['off_breadcrumb'])) {
+              <?php if (!empty($lottovite_option['off_breadcrumb'])) {
                   $rs_breadcrumbs = get_post_meta(get_the_ID(), 'select-bread', true);
                   if ($rs_breadcrumbs != 'hide') :
                     if (function_exists('bcn_display')) { ?>
-                    <div class="breadcrumbs-title"> <?php bcn_display(); ?></div>
+                    <div class="breadcrumbs-title 3"> <?php bcn_display(); ?></div>
               <?php }
                   endif;
                 } ?>
