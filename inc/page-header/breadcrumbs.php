@@ -49,13 +49,16 @@ $intro_content_banner = get_post_meta(get_the_ID(), 'intro_content_banner', true
                   <span class="sub-title"><?php echo esc_html($intro_content_banner); ?></span>
                 <?php endif; ?>
                 <div class="wrapper">
-                  <span class="bg-text-stok"><?php the_title(); ?></span>
+
+
                   <div class="title">
                     <h1 class="page-title word-line">
                       <?php if ($content_banner != '') {
                             echo esc_html($content_banner);
+                           
                           } else {
                             the_title();
+                           
                           }
                           ?>
                     </h1>
@@ -64,7 +67,7 @@ $intro_content_banner = get_post_meta(get_the_ID(), 'intro_content_banner', true
               <?php }
                 ?>
             </div>
-            <div class="col-lg-12 col-md-12">
+            <div class="col-lg-12 col-md-12 ffdd">
               <?php if (!empty($solari_option['off_breadcrumb'])) {
                   $rs_breadcrumbs = get_post_meta(get_the_ID(), 'select-bread', true);
                   if ($rs_breadcrumbs != 'hide') :

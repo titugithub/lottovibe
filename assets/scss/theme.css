@@ -7740,7 +7740,7 @@ a:hover, a:active {
   ---------------------------------------*/
 .reactheme-breadcrumbs {
   position: relative;
-  background: #1F1F25;
+  background: #000;
 }
 .reactheme-breadcrumbs .row {
   align-items: center;
