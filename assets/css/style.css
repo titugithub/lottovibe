@@ -592,7 +592,6 @@ li i {
 a {
   text-decoration: none;
   outline: none;
-  color: var(--n0);
   transition: var(--transition);
   font-family: var(--body-font);
 }
