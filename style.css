@@ -1133,7 +1133,7 @@ body:not(.rtl) .eng-stor-head.elementor-widget__width-initial {
 	pointer-events: auto !important;
 }
 
-/* Custom */
+/*====================================== Custom ================================================*/
 
 header#reactheme-header {
     position: fixed;
@@ -1280,7 +1280,6 @@ span.elementor-edit-link-title {
 
 .header-inner.sticky-menu {
     background: var(--bg1);
-	
 }
 
 .reactheme-breadcrumbs .breadcrumbs-inner {
@@ -1293,4 +1292,8 @@ span.elementor-edit-link-title {
 
 .cart-icon-total-products.visible-cart {
     z-index: 9999 !important;
+}
+
+.banner-section-v3 ul{
+	list-style: none !important;
 }
