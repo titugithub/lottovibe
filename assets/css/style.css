@@ -12390,16 +12390,16 @@ iframe {
   z-index: 1;
 }
 .bliss-bodywrap::before {
-  background: url(../../assets/images/bike/bliss-bg.png) no-repeat center center;
+  
   background-size: cover;
   position: absolute;
   content: "";
   top: 7px;
   left: 0;
-  width: 82%;
+  width: 100%;
   height: 594px;
   z-index: -1;
-  border-top-right-radius: 124px;
+  
 }
 @media (max-width: 1900px) {
   .bliss-bodywrap::before {
