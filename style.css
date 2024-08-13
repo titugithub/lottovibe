@@ -1297,3 +1297,9 @@ span.elementor-edit-link-title {
 .banner-section-v3 ul{
 	list-style: none !important;
 }
+.barsection .phone-thumb img{
+	width: unset;
+}
+.barsection .smar-phonewrap{
+	text-align: center;
+}

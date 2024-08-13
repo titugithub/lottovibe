@@ -18,7 +18,7 @@ function lottovite_scripts() {
 	wp_enqueue_script( 'matter-custom', get_template_directory_uri() . '/assets/js/plugins/matter-custom.js', array('jquery'), '2.8.3', true );
 	wp_enqueue_script( 'swiperr', get_template_directory_uri() . '/assets/js/plugins/swiper.js', array('jquery'), '2.8.3', true );
 	wp_enqueue_script( 'viewpot', get_template_directory_uri() . '/assets/js/plugins/viewpot.js', array('jquery'), '2.8.3', true );
-	wp_enqueue_script( 'viewpot', get_template_directory_uri() . '/assets/js/bootstrap.min.js', array('jquery'), '2.8.3', true );
+	wp_enqueue_script( 'viewfpot', get_template_directory_uri() . '/assets/js/bootstrap.min.js', array('jquery'), '2.8.3', true );
 	wp_enqueue_script( 'aos', get_template_directory_uri() . '/assets/js/plugins/aos.js', array('jquery'), '2.8.3', true );
 	wp_enqueue_script( 'odometer', get_template_directory_uri() . '/assets/js/plugins/odometer.js', array('jquery'), '2.8.3', true );
 	wp_enqueue_script( 'nice-select-js', get_template_directory_uri() . '/assets/js/plugins/jquery.nice-select.min.js', array('jquery'), '2.8.3', true );
