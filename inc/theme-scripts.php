@@ -15,6 +15,7 @@ function lottovite_scripts() {
 
 
 	// wp_enqueue_script( 'ggggg', get_template_directory_uri() . '/assets/js/plugins/jquery.js', array('jquery'), '', true );
+	// wp_enqueue_script( 'matter', get_template_directory_uri() . '/assets/js/matter.js', array('jquery'), '2.8.3', true );
 	wp_enqueue_script( 'matter-custom', get_template_directory_uri() . '/assets/js/plugins/matter-custom.js', array('jquery'), '2.8.3', true );
 	wp_enqueue_script( 'swiperr', get_template_directory_uri() . '/assets/js/plugins/swiper.js', array('jquery'), '2.8.3', true );
 	wp_enqueue_script( 'viewpot', get_template_directory_uri() . '/assets/js/plugins/viewpot.js', array('jquery'), '2.8.3', true );
