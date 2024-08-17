@@ -8240,6 +8240,10 @@ iframe {
   }
 }
 
+.draw-k{
+  height: 344px;
+}
+
 .draw-nextwrap {
   background: #FFEAE4;
   -webkit-clip-path: polygon(5% 0, 100% 0, 100% 0, 100% 80%, 96% 100%, 0 100%, 0 16%);
@@ -12396,7 +12400,7 @@ iframe {
   content: "";
   top: 7px;
   left: 0;
-  width: 100%;
+  width: 82%;
   height: 594px;
   z-index: -1;
   
