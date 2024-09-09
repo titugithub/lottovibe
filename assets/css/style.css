@@ -4802,10 +4802,6 @@ iframe {
   text-decoration: underline;
 }
 
-.banner-section-v9 {
-  background: rgba(254, 201, 47, 0.1);
-}
-
 .banner-content-v9 .start-icontext {
   margin-top: -10px;
 }
@@ -4922,9 +4918,7 @@ iframe {
   }
 }
 
-.nexdraw-wrapperv9 {
-  background: #FFF4D3;
-}
+
 .nexdraw-wrapperv9 .nextdraw-innerwrapv9 {
   display: flex;
   align-items: center;
@@ -4994,7 +4988,7 @@ iframe {
   width: 400px;
   height: 360px;
   right: -90px;
-  bottom: 24%;
+  bottom: 0%;
 }
 @media (max-width: 1800px) {
   .electronic-shape::before {
@@ -11053,9 +11047,12 @@ iframe {
 .blog-v5-rightwrap .blog-v5-inner .thumb {
   max-width: 196px;
   border-radius: 12px;
+  height: 100%;
 }
 .blog-v5-rightwrap .blog-v5-inner .thumb img {
   border-radius: 12px;
+  height: 100%;
+  object-fit: cover;
 }
 .blog-v5-rightwrap .blog-v5-inner .content {
   width: calc(100% - 196px);

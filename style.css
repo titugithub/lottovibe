@@ -1303,3 +1303,22 @@ span.elementor-edit-link-title {
 .barsection .smar-phonewrap{
 	text-align: center;
 }
+
+.footersectionmenu ul li {
+    display: block !IMPORTANT;
+    text-decoration: none;
+}
+
+.jewelerytype .thumb {
+    max-width: 286px;
+    height: 180px;
+    transition: all 0.6s;
+    margin: -20px auto 0;
+}
+.jewelerytype .thumb img {
+    object-fit: contain !important;
+	height: 100% !important;
+}
+.jewelerytype .winbg {
+    background: unset !important;
+}
