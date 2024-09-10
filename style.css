@@ -1322,3 +1322,26 @@ span.elementor-edit-link-title {
 .jewelerytype .winbg {
     background: unset !important;
 }
+
+.prize::before {
+    position: absolute;
+    left: -15px;
+    top: 0px;
+    height: 90%;
+    width: 2px;
+    content: "";
+    background: linear-gradient(180deg, #FF650E 0%, rgba(255, 101, 14, 0) 100%);
+}
+
+.animate-image {
+    animation: upDown 2s infinite alternate;
+}
+
+@keyframes upDown {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
+}
