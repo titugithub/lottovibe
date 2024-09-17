@@ -1,6 +1,6 @@
 
 <!-- Portfolio Detail Start -->
-    <div class="reactheme-porfolio-details"> 
+    <div class="svtheme-porfolio-details"> 
         <?php while ( have_posts() ) : the_post(); ?>          
        
         <div class="project-desc">       

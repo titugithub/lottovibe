@@ -21,7 +21,7 @@
     <!-- Blog Detail Start -->
     <div class="container">
     <div id="content">
-    <div class="reactheme-blog-details pt-70 pb-70">
+    <div class="svtheme-blog-details pt-70 pb-70">
         <div class="row padding-<?php echo esc_attr( $col_letf) ?>">
             <div class="col-lg-<?php echo esc_attr( $col_side). ' ' .esc_attr( $col_letf) ?>">
                 <div class="news-details-inner">

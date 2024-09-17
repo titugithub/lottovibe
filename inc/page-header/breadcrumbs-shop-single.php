@@ -26,7 +26,7 @@
     $content_banner = get_post_meta(get_queried_object_id(), 'content_banner', true); 
 ?>
 
-<div class="reactheme-breadcrumbs porfolio-details <?php echo esc_attr($header_trans);?>">
+<div class="svtheme-breadcrumbs porfolio-details <?php echo esc_attr($header_trans);?>">
 <?php if($post_meta_data !='') { ?>
     <div class="breadcrumbs-single" style="background-image: url('<?php echo esc_url( $post_meta_data );?>')">
         <div class="<?php echo esc_attr($header_width);?>">
@@ -162,7 +162,7 @@ elseif(!empty($lottovite_option['breadcrumb_bg_color'])){
   <?php }
       else{
         ?>
-        <div class="reactheme-breadcrumbs-inner">
+        <div class="svtheme-breadcrumbs-inner">
             <div class="<?php echo esc_attr($header_width);?>">
                 <div class="breadcrumbs-inner bread-<?php echo esc_attr($post_menu_type); ?>"> 
                     <div class="row">

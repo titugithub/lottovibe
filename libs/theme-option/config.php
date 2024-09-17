@@ -468,7 +468,7 @@ Redux::setSection(
                 'id'          => 'opt-typography',
                 'type'        => 'typography', 
                 'title'       => __('Banner Title Typography', 'lottovite'),    
-                'output'      => array('.reactheme-breadcrumbs .page-title'),
+                'output'      => array('.svtheme-breadcrumbs .page-title'),
                 'units'       =>'px',
                 'subtitle'    => __('Typography option with each property can be called individually.', 'lottovite'),                
             ),

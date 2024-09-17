@@ -248,16 +248,16 @@ $body_color  = !empty($lottovite_option['body_text_color']) ? $lottovite_option[
 
 	
 	<?php if(!empty($lottovite_option['breadcrumb_top_gap']) && !empty($lottovite_option['breadcrumb_bottom_gap'])) : ?>
-		.reactheme-breadcrumbs .breadcrumbs-inner,
-		#reactheme-header.header-style-3 .reactheme-breadcrumbs .breadcrumbs-inner{
+		.svtheme-breadcrumbs .breadcrumbs-inner,
+		#svtheme-header.header-style-3 .svtheme-breadcrumbs .breadcrumbs-inner{
 			padding-top:<?php echo esc_attr($lottovite_option['breadcrumb_top_gap']); ?>;			
 			padding-bottom:<?php echo esc_attr($lottovite_option['breadcrumb_bottom_gap']); ?>;			
 	}
 	<?php endif; ?>
 	<?php if(!empty($lottovite_option['mobile_breadcrumb_top_gap']) && !empty($lottovite_option['mobile_breadcrumb_bottom_gap'])) : ?>
 		@media only screen and (max-width: 767px) {
-		.reactheme-breadcrumbs .breadcrumbs-inner,
-		#reactheme-header.header-style-3 .reactheme-breadcrumbs .breadcrumbs-inner{
+		.svtheme-breadcrumbs .breadcrumbs-inner,
+		#svtheme-header.header-style-3 .svtheme-breadcrumbs .breadcrumbs-inner{
 			padding-top:<?php echo esc_attr($lottovite_option['mobile_breadcrumb_top_gap']); ?>;			
 			padding-bottom:<?php echo esc_attr($lottovite_option['mobile_breadcrumb_bottom_gap']); ?>;			
 		}
@@ -285,15 +285,15 @@ $body_color  = !empty($lottovite_option['body_text_color']) ? $lottovite_option[
 	.single-teams .designation-info{
 		color: <?php echo sanitize_hex_color($site_color); ?>;
 	}
-	.blog .reactheme-blog .blog-item .full-blog-content .user-info .single-info.cat a:hover,
-	.archive .reactheme-blog .blog-item .full-blog-content .user-info .single-info.cat a:hover,
-	.reactheme-blog .blog-meta .blog-title a:hover,		
+	.blog .svtheme-blog .blog-item .full-blog-content .user-info .single-info.cat a:hover,
+	.archive .svtheme-blog .blog-item .full-blog-content .user-info .single-info.cat a:hover,
+	.svtheme-blog .blog-meta .blog-title a:hover,		
 	a:hover, a:focus, a:active,
-	.reactheme-blog .blog-meta .blog-title a:hover,
-	.reactheme-blog .blog-item .blog-meta .categories a:hover,
+	.svtheme-blog .blog-meta .blog-title a:hover,
+	.svtheme-blog .blog-item .blog-meta .categories a:hover,
 	.react-sideabr ul a:hover,
 	.react-sideabr .widget_categories ul li a:hover, .react-sideabr .widget_archive ul li a:hover, .react-sideabr .widget_pages ul li a:hover, .react-sideabr .widget_meta ul li a:hover, .react-sideabr .widget_recent_entries ul li a:hover, .react-sideabr .widget_nav_menu ul li a:hover, .react-sideabr .widget_block ul li a:hover,
-	.blog .reactheme-blog .blog-item .full-blog-content .title-wrap .blog-title:hover a, .archive .reactheme-blog .blog-item .full-blog-content .title-wrap .blog-title:hover a{
+	.blog .svtheme-blog .blog-item .full-blog-content .title-wrap .blog-title:hover a, .archive .svtheme-blog .blog-item .full-blog-content .title-wrap .blog-title:hover a{
 		color: <?php echo sanitize_hex_color($link_hover_color); ?>;
 	}
 	
@@ -313,7 +313,7 @@ $body_color  = !empty($lottovite_option['body_text_color']) ? $lottovite_option[
 	<?php endif; ?>
 
 	<?php if(!empty($lottovite_option['page_title_color'])) : ?>
-		.reactheme-breadcrumbs .page-title{
+		.svtheme-breadcrumbs .page-title{
 			color: <?php echo sanitize_hex_color($lottovite_option['page_title_color']); ?> !important;  
 		}
 	<?php endif; ?>
@@ -337,7 +337,7 @@ $body_color  = !empty($lottovite_option['body_text_color']) ? $lottovite_option[
 	  	?>
 	  	  <style>
 	  	  	.main-contain #content,
-	  	  	body.reactheme-pages-btm-gap .main-contain #content{
+	  	  	body.svtheme-pages-btm-gap .main-contain #content{
 	  	  		<?php if(!empty($padding_top)): ?>padding-top:<?php echo esc_attr($padding_top); endif;?>;
 	  	  		<?php if(!empty($padding_bottom)): ?>padding-bottom:<?php echo esc_attr($padding_bottom); endif;?>;
 	  	  	}
@@ -347,7 +347,7 @@ $body_color  = !empty($lottovite_option['body_text_color']) ? $lottovite_option[
    		if($footer_padd_top != '' || $footer_padd_bottom != ''){
  	  	?>
  	  	  <style>
- 	  	  	.reactheme-footer .footer-top{
+ 	  	  	.svtheme-footer .footer-top{
  	  	  		<?php if(!empty($footer_padd_top)): ?>padding-top:<?php echo esc_attr($footer_padd_top); endif;?>;
  	  	  		<?php if(!empty($footer_padd_bottom)): ?>padding-bottom:<?php echo esc_attr($footer_padd_bottom); endif;?>;
  	  	  	}
@@ -364,7 +364,7 @@ $body_color  = !empty($lottovite_option['body_text_color']) ? $lottovite_option[
 	  	?>
 	  	  <style>
 	  	  	.main-contain #content,
-	  	  	body.reactheme-pages-btm-gap .main-contain #content{
+	  	  	body.svtheme-pages-btm-gap .main-contain #content{
 	  	  		<?php if(!empty($padding_top)): ?>padding-top:<?php echo esc_attr($padding_top); endif;?>;
 	  	  		<?php if(!empty($padding_bottom)): ?>padding-bottom:<?php echo esc_attr($padding_bottom); endif;?>;
 	  	  	}
@@ -375,7 +375,7 @@ $body_color  = !empty($lottovite_option['body_text_color']) ? $lottovite_option[
 		if($footer_padd_top != '' || $footer_padd_bottom != ''){
 	  	?>
 	  	  <style>
-	  	  	.reactheme-footer .footer-top{
+	  	  	.svtheme-footer .footer-top{
 	  	  		<?php if(!empty($footer_padd_top)): ?>padding-top:<?php echo esc_attr($footer_padd_top); endif;?> !important;
 	  	  		<?php if(!empty($footer_padd_bottom)): ?>padding-bottom:<?php echo esc_attr($footer_padd_bottom); endif;?> !important;
 	  	  	}

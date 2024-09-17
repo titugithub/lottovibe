@@ -1,8 +1,8 @@
 /*
 Theme Name: lottovite
 Theme URI: https://lottovite.themewant.com/
-Author: reacthemes
-Author URI: http://www.reactheme.com
+Author: svthemes
+Author URI: http://www.svtheme.com
 Description: lottovite - Solar Energy WordPress Theme
 Version: 1.1.5
 License: GNU General Public License v2 or later
@@ -455,7 +455,7 @@ table {
 
 
 .full-blog-content .blog-title a,
-.reactheme-breadcrumbs .page-title {
+.svtheme-breadcrumbs .page-title {
 	word-break: break-word;
 }
 
@@ -777,7 +777,7 @@ img.footer-logo-light {
 	font-style: italic;
 }
 
-.fowh2 .reactheme-heading .title-inner .title {
+.fowh2 .svtheme-heading .title-inner .title {
 	font-weight: 500 !important;
 }
 
@@ -877,7 +877,7 @@ li.trackback {
 	padding: 8px 15px 0;
 }
 
-.reactheme-blog-details .bs-info.tags a {
+.svtheme-blog-details .bs-info.tags a {
 	padding-top: 4px;
 }
 
@@ -889,7 +889,7 @@ li.trackback {
 	padding-left: 14px;
 }
 
-#reactheme-header.menugap-minus .logo-area .site-title a {
+#svtheme-header.menugap-minus .logo-area .site-title a {
 	padding-bottom: 5px;
 }
 
@@ -1135,7 +1135,7 @@ body:not(.rtl) .eng-stor-head.elementor-widget__width-initial {
 
 /*====================================== Custom ================================================*/
 
-header#reactheme-header {
+header#svtheme-header {
     position: fixed;
 }
 
@@ -1282,11 +1282,11 @@ span.elementor-edit-link-title {
     background: var(--bg1);
 }
 
-.reactheme-breadcrumbs .breadcrumbs-inner {
+.svtheme-breadcrumbs .breadcrumbs-inner {
     padding-top: 220px;
 }
 
-#reactheme-header {
+#svtheme-header {
     z-index: 999 !important;
 }
 
@@ -1344,4 +1344,8 @@ span.elementor-edit-link-title {
     100% {
         transform: translateY(-20px);
     }
+}
+
+.service-cycle .program-thumb .thumb img {
+    width: 100%;
 }

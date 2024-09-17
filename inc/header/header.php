@@ -38,7 +38,7 @@ $get_header = ($headser_postion == 'on') ? 'fixed-header' : '';
   get_template_part('inc/header/search');
 ?>
 
-    <header id="reactheme-header" class="rts-default-header header-style-1 mainsmenu<?php echo esc_attr($main_menu_hides);?>">
+    <header id="svtheme-header" class="rts-default-header header-style-1 mainsmenu<?php echo esc_attr($main_menu_hides);?>">
      
     	<div class="header-inner<?php echo esc_attr($sticky_menu);?>">    
     		<div class="container">

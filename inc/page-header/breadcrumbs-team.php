@@ -5,7 +5,7 @@
     $post_meta_data = get_post_meta(get_the_ID(), 'banner_image', true);
     $post_menu_type = get_post_meta(get_the_ID(), 'menu-type', true);    
 ?>
-<div class="reactheme-breadcrumbs  porfolio-details rts-bread-crumb-area">
+<div class="svtheme-breadcrumbs  porfolio-details rts-bread-crumb-area">
 <?php if($post_meta_data !='') { ?>
     <div class="breadcrumbs-single" style="background-image: url('<?php echo esc_url( $post_meta_data );?>')">
         <div class="container">
@@ -86,7 +86,7 @@ elseif (!empty($lottovite_option['team_single_image']['url'])) {?>
 </div>
     
 <?php }else{?>
-    <div class="reactheme-breadcrumbs-inner">
+    <div class="svtheme-breadcrumbs-inner">
           <div class="container">
             <div class="row">
               <div class="col-md-12">

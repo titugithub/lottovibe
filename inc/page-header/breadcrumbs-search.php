@@ -1,4 +1,4 @@
-<div class="reactheme-breadcrumbs  porfolio-details">  
+<div class="svtheme-breadcrumbs  porfolio-details">  
   <?php 
     global $lottovite_option;
     if(!empty($lottovite_option['blog_banner_main']['url'])) { ?>
@@ -10,7 +10,7 @@
     else { ?>
         <div class="breadcrumbs-single">
     <?php } ?>
-      <div class="reactheme-breadcrumbs-inner">
+      <div class="svtheme-breadcrumbs-inner">
       <div class="container">
         <div class="row">
           <div class="col-md-12">

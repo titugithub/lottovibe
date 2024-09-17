@@ -1406,44 +1406,44 @@ li.redux-social-profiles-item-enable:hover {
 	background: none!important;
 }
 
-.reacthemes-license-activator-form-wrapper {
+.svthemes-license-activator-form-wrapper {
 	background: #fff;
 	padding: 5em;
 	max-width: 50%;
     margin: 100px auto;
 }
-.reacthemes-license-activator-form-header h1 {
+.svthemes-license-activator-form-header h1 {
   font-size: 2rem;
   text-align: center;
 }
-.reacthemes-license-activator-form-header {
+.svthemes-license-activator-form-header {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
   text-align: center;
 }
-.reacthemes-license-activator-form-header .notice.notice-warning.is-dismissible {
+.svthemes-license-activator-form-header .notice.notice-warning.is-dismissible {
   display: none;
 }
-.reacthemes-license-activator-form-wrapper .form-table th {
+.svthemes-license-activator-form-wrapper .form-table th {
   display: none;
 }
-.reacthemes-license-activator-form-wrapper .form-table td {
+.svthemes-license-activator-form-wrapper .form-table td {
   text-align: center;
 }
-.reacthemes-license-activator-form-wrapper input {
+.svthemes-license-activator-form-wrapper input {
   padding: 0.6em;
   font-size: 17px;
 }
-.reacthemes-license-activator-form-wrapper .submit {
+.svthemes-license-activator-form-wrapper .submit {
   text-align: center;
 }
-.reacthemes-license-activator-form-wrapper .submit input, .reacthemes-license-activator-form-wrapper .submit a {
+.svthemes-license-activator-form-wrapper .submit input, .svthemes-license-activator-form-wrapper .submit a {
 	padding: 0.1em 2em;
    font-size: 18px;
 }
-.reacthemes-license-activator-form-footer {
+.svthemes-license-activator-form-footer {
   text-align: center;
 }
 

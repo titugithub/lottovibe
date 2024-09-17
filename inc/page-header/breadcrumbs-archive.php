@@ -9,7 +9,7 @@
     }
 ?>
 
-<div class="reactheme-breadcrumbs porfolio-details <?php echo esc_attr($header_trans);?>">
+<div class="svtheme-breadcrumbs porfolio-details <?php echo esc_attr($header_trans);?>">
     <?php  if(is_post_type_archive('events')){
         $archive_banner = !empty($lottovite_option['event_banner_main']['url']) ? $lottovite_option['event_banner_main']['url'] : '';
     }
@@ -67,7 +67,7 @@
   <?php }
   else{   
   ?>
-  <div class="reactheme-breadcrumbs-inner">  
+  <div class="svtheme-breadcrumbs-inner">  
     <div class="container">
         <div class="breadcrumbs-inner">
             <div class="row">

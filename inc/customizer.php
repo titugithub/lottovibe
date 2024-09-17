@@ -1,6 +1,6 @@
 <?php
 /**
- * @author  reactheme-theme
+ * @author  svtheme-theme
  * @since   1.0
  * @version 1.0 
  */

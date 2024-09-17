@@ -14,7 +14,7 @@ $logo_height = !empty($lottovite_option['logo-height']) ? 'style = "max-height: 
     </div> 
     <div class="sidenav offcanvas-icon">      
 
-            <div id="mobile_menu" class="reactheme-offcanvas-inner-left">
+            <div id="mobile_menu" class="svtheme-offcanvas-inner-left">
                 <?php
                     if(is_page_template('page-single.php')){
                         if ( has_nav_menu( 'menu-2' ) ):
@@ -53,7 +53,7 @@ $logo_height = !empty($lottovite_option['logo-height']) ? 'style = "max-height: 
           
  
                
-            <div class="reactheme-innner-offcanvas-contents"> 
+            <div class="svtheme-innner-offcanvas-contents"> 
 
                <?php 
                  $canvas_style = new WP_Query(array(

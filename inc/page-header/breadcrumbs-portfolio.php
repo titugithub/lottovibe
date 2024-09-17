@@ -6,7 +6,7 @@
     $intro_content_banner = get_post_meta(get_the_ID(), 'intro_content_banner', true); 
 ?>
 
-<div class="reactheme-breadcrumbs  porfolio-details rts-bread-crumb-area">
+<div class="svtheme-breadcrumbs  porfolio-details rts-bread-crumb-area">
 <?php if($post_meta_data !='') { ?>
     <div class="breadcrumbs-single" style="background-image: url('<?php echo esc_url( $post_meta_data );?>')">
         <div class="container">
@@ -92,7 +92,7 @@ elseif (!empty($lottovite_option['department_single_image']['url'])) {
         </div>
     </div>    
 <?php }else{?>
-    <div class="reactheme-breadcrumbs-inner">
+    <div class="svtheme-breadcrumbs-inner">
           <div class="container">
            <div class="breadcrumbs-inner bread-<?php echo esc_attr($post_menu_type); ?>">
                 <div class="row">            

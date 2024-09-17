@@ -17,7 +17,7 @@
  
 if($post_meta_data !=''){   
 ?>
-<div class="reactheme-breadcrumbs porfolio-details">
+<div class="svtheme-breadcrumbs porfolio-details">
     <div class="breadcrumbs-single" style="background-image: url('<?php echo esc_url($post_meta_data); ?>')">
       <div class="<?php echo esc_attr($header_width);?>">
         <div class="row">
@@ -39,7 +39,7 @@ if($post_meta_data !=''){
 
     else{
       ?>
-    <div class="reactheme-breadcrumbs porfolio-details">
+    <div class="svtheme-breadcrumbs porfolio-details">
     <div class="breadcrumbs-single">
       <div class="<?php echo esc_attr($header_width);?>">
         <div class="row">

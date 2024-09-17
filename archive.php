@@ -2,7 +2,7 @@
 get_header();?>
 <div class="container">
 <div id="content">
-<div id="reactheme-blog" class="reactheme-blog blog-page">
+<div id="svtheme-blog" class="svtheme-blog blog-page">
    <?php
        //checking blog layout form option
        $col         = '';

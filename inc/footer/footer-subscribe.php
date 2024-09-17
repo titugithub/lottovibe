@@ -14,7 +14,7 @@ if(!empty($lottovite_option['call_tilte']) || !empty($lottovite_option['call_des
 
 
 <?php if(is_active_sidebar('footer_top')) { ?>
-    <div class="reactheme-newsletter reactheme-newsletters">
+    <div class="svtheme-newsletter svtheme-newsletters">
         <div class="container">
                 <?php if(!empty( $newsletter_bg_img)): ?>
                 <div class="newsletter-wrap" style="background-image: url('<?php echo esc_url($newsletter_bg_img); ?>');">

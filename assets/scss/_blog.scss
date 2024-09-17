@@ -1,8 +1,8 @@
 /* Blog Design */
-.reactheme-blog-grid .pagination-area{
+.svtheme-blog-grid .pagination-area{
     padding-bottom: 84px;
 }
-.reactheme-blog {
+.svtheme-blog {
     .cat_name{
         display: none;
     }
@@ -32,7 +32,7 @@
 
 
 .blog, .archive{
-    .reactheme-blog { 
+    .svtheme-blog { 
         .blog-item{          
             transition: all 0.5s ease 0s;
             background: #fff;                   
@@ -177,8 +177,8 @@
         }
     }
 }
-.reactheme-blog-details,
-.reactheme-blog,
+.svtheme-blog-details,
+.svtheme-blog,
 .blog{
     .bs-img,
     .blog-img{
@@ -304,7 +304,7 @@
 /* -----------------------
     14. Blog Post
 --------------------------*/
-.reactheme-blog{
+.svtheme-blog{
     .grid-blog{
         margin-top: 50px;
     }
@@ -574,7 +574,7 @@
 
     }
 }
-.single-post .reactheme-blog-details .single-content-full ul.blog-list-style{
+.single-post .svtheme-blog-details .single-content-full ul.blog-list-style{
     margin-bottom: 0px;
     margin-left: 0px;
     list-style: none;
@@ -599,14 +599,14 @@
         }
     }
 }
-.single-post .reactheme-blog-details .bs-meta{
+.single-post .svtheme-blog-details .bs-meta{
     margin-top: 0px;
     margin-bottom: 18px;
 }
 .comment-respond .form-submit{
     margin-bottom: 0;
 }
-.single-post .reactheme-blog-details .type-post .single-content-full{    
+.single-post .svtheme-blog-details .type-post .single-content-full{    
     overflow: visible;
     .user-info{
         display: flex;
@@ -653,7 +653,7 @@
 }
 
 body.archive{
-    .reactheme-blog .blog-item{
+    .svtheme-blog .blog-item{
         overflow: hidden;
         margin-bottom: 70px;
     }
@@ -765,7 +765,7 @@ body{
         color:#fff
     }
 }
-.reactheme-blog-details {     
+.svtheme-blog-details {     
     .news-details-inner{
         margin-right: 30px;
         border: 1px solid #efefef;
@@ -2414,7 +2414,7 @@ list-style: none;
     padding-top: 15px;
 }
 
-.reactheme-blog-details .bs-meta li.category-name a {
+.svtheme-blog-details .bs-meta li.category-name a {
     line-height: 22px;
 }
 .single #content h3, 

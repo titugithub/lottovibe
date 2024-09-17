@@ -4,8 +4,8 @@
 * -----------------------------------------------------------------------------
 *
 * Template : Solari - Solar Energy WordPress theme
-* Author : reacthemes
-* Author URI : http://www.reactheme.com/
+* Author : svthemes
+* Author URI : http://www.svtheme.com/
 *
 * -----------------------------------------------------------------------------
 *
@@ -63,7 +63,8 @@ $btnHoverColor: #ffffff;
 @import "woocommerce";
 
 :root{
-    --color-primary:#aefe3a
+    --color-primary:#aefe3a;
+    --color-primary2:#4AAB3D;
 }
 
 /* -----------------------------------
@@ -556,7 +557,7 @@ input[type="submit"]:hover{
         padding-top: 120px;
         padding-bottom: 120px;
     }    
-    .reactheme-porfolio-details{
+    .svtheme-porfolio-details{
         
        #content {
             padding-bottom: 110px;
@@ -656,7 +657,7 @@ a:hover,  a:active {
         display: block;
     }
 }
-#reactheme-header.header-style-1 .sticky .menu_one{
+#svtheme-header.header-style-1 .sticky .menu_one{
     top:0
 }
 .sidenav{
@@ -681,7 +682,7 @@ a:hover,  a:active {
             z-index: 1;
         }
     } 
-    .widget_reactheme_soical_widget{
+    .widget_svtheme_soical_widget{
       display: flex;
       justify-content: center;
     }
@@ -982,7 +983,7 @@ a:hover,  a:active {
   -moz-transform: translate(0);
   transform: translate(0);
 }
-#reactheme-header .menu-area .navbar ul li ul li .sub-menu{
+#svtheme-header .menu-area .navbar ul li ul li .sub-menu{
     position: absolute;
     left: 100%;
     top: 0;
@@ -994,18 +995,18 @@ a:hover,  a:active {
     }
 }
 
-#reactheme-header.header-transparent .menu-sticky.sticky ul.offcanvas-icon.sidenav .nav-link-container span{
+#svtheme-header.header-transparent .menu-sticky.sticky ul.offcanvas-icon.sidenav .nav-link-container span{
     background: #fff !important;
 }
-#reactheme-header .menu-area .navbar ul li ul li:hover ul.sub-menu{
+#svtheme-header .menu-area .navbar ul li ul li:hover ul.sub-menu{
     opacity: 1;
     transform: scaleY(1);
     visibility: visible;
 }
-#reactheme-header .menu-area .navbar ul li.three-col ul > li{
+#svtheme-header .menu-area .navbar ul li.three-col ul > li{
     width: 33.33%;
 }
-#reactheme-header .menu-area .navbar ul li.four-col ul > li{
+#svtheme-header .menu-area .navbar ul li.four-col ul > li{
     width: 25%;
 }
 .transparent_header {
@@ -1039,7 +1040,7 @@ a:hover,  a:active {
 /* ------------------------------------
     20. Breadcrumbs
   ---------------------------------------*/
-.reactheme-breadcrumbs{
+.svtheme-breadcrumbs{
     .row{
         align-items: center;
     }
@@ -1559,7 +1560,7 @@ body.logged-in{
 
 
 
-#reactheme-header .sticky-wrapper .sticky .stikcy-padding{
+#svtheme-header .sticky-wrapper .sticky .stikcy-padding{
     padding: 5px 0 !important
 }
 

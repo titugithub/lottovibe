@@ -11,7 +11,7 @@
 		$menu_bg           = get_post_meta(get_queried_object_id(), 'menu-type-bg', true);
 		$menu_center_page  = get_post_meta(get_queried_object_id(), 'center-menus', true);
 		$quote_btn_texts   = get_post_meta(get_queried_object_id(), 'quote_btn_text', true);
-		$skew_style        = (!empty($lottovite_option['skew_off'])) ? 'reactheme-skew-head' : '';
+		$skew_style        = (!empty($lottovite_option['skew_off'])) ? 'svtheme-skew-head' : '';
 		$skew_styles       = get_post_meta(get_queried_object_id(), 'show-skew', true);
 		$skew_styles       = (!empty($skew_styles)) ? $skew_styles : '';
 
@@ -30,7 +30,7 @@
 		$menu_bg           = get_post_meta(get_queried_object_id(), 'menu-type-bg', true);
 		$menu_center_page  = get_post_meta(get_queried_object_id(), 'center-menus', true);
 		$quote_btn_texts   = get_post_meta(get_queried_object_id(), 'quote_btn_text', true);
-		$skew_style        = (!empty($lottovite_option['skew_off'])) ? 'reactheme-skew-head' : '';
+		$skew_style        = (!empty($lottovite_option['skew_off'])) ? 'svtheme-skew-head' : '';
 		$skew_styles       = get_post_meta(get_queried_object_id(), 'show-skew', true);
 		$skew_styles       = (!empty($skew_styles)) ? $skew_styles : '';
 		//Topbar 

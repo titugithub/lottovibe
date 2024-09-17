@@ -128,11 +128,11 @@ function lottovite_import_files() {
     array(
       'import_file_name'           => 'Wind Energy',
       'categories'                 => array( 'Wind Energy' ),
-      'import_file_url'            => 'https://reactheme.com/products/demo-data/lottovite/default/lottovite-content.xml',
+      'import_file_url'            => 'https://svtheme.com/products/demo-data/lottovite/default/lottovite-content.xml',
              
       'import_redux'               => array(
         array(
-          'file_url'    => 'https://reactheme.com/products/demo-data/lottovite/default/lottovite-options.json',
+          'file_url'    => 'https://svtheme.com/products/demo-data/lottovite/default/lottovite-options.json',
           'option_name' => 'lottovite_option',
         ),
       ),
@@ -145,11 +145,11 @@ function lottovite_import_files() {
     array(
       'import_file_name'           => 'Solar Energy',
       'categories'                 => array( 'Solar Energy' ),
-      'import_file_url'            => 'https://reactheme.com/products/demo-data/lottovite/default/lottovite-content-2.xml',
+      'import_file_url'            => 'https://svtheme.com/products/demo-data/lottovite/default/lottovite-content-2.xml',
              
       'import_redux'               => array(
         array(
-          'file_url'    => 'https://reactheme.com/products/demo-data/lottovite/default/lottovite-options.json',
+          'file_url'    => 'https://svtheme.com/products/demo-data/lottovite/default/lottovite-options.json',
           'option_name' => 'lottovite_option',
         ),
       ),
@@ -162,11 +162,11 @@ function lottovite_import_files() {
     array(
       'import_file_name'           => 'Renewable Energy',
       'categories'                 => array( 'Renewable Energy' ),
-      'import_file_url'            => 'https://reactheme.com/products/demo-data/lottovite/default/lottovite-content-3.xml',
+      'import_file_url'            => 'https://svtheme.com/products/demo-data/lottovite/default/lottovite-content-3.xml',
              
       'import_redux'               => array(
         array(
-          'file_url'    => 'https://reactheme.com/products/demo-data/lottovite/default/lottovite-options.json',
+          'file_url'    => 'https://svtheme.com/products/demo-data/lottovite/default/lottovite-options.json',
           'option_name' => 'lottovite_option',
         ),
       ),
@@ -180,11 +180,11 @@ function lottovite_import_files() {
     array(
       'import_file_name'           => 'Hydro Power',
       'categories'                 => array( 'Hydro Power' ),
-      'import_file_url'            => 'https://reactheme.com/products/demo-data/lottovite/default/lottovite-content-4.xml',
+      'import_file_url'            => 'https://svtheme.com/products/demo-data/lottovite/default/lottovite-content-4.xml',
              
       'import_redux'               => array(
         array(
-          'file_url'    => 'https://reactheme.com/products/demo-data/lottovite/default/lottovite-options.json',
+          'file_url'    => 'https://svtheme.com/products/demo-data/lottovite/default/lottovite-options.json',
           'option_name' => 'lottovite_option',
         ),
       ),
@@ -198,11 +198,11 @@ function lottovite_import_files() {
     array(
       'import_file_name'           => 'Wind Energy Banner',
       'categories'                 => array( 'Wind Energy' ),
-      'import_file_url'            => 'https://reactheme.com/products/demo-data/lottovite/default/wind-video.xml',
+      'import_file_url'            => 'https://svtheme.com/products/demo-data/lottovite/default/wind-video.xml',
              
       'import_redux'               => array(
         array(
-          'file_url'    => 'https://reactheme.com/products/demo-data/lottovite/default/lottovite-options.json',
+          'file_url'    => 'https://svtheme.com/products/demo-data/lottovite/default/lottovite-options.json',
           'option_name' => 'lottovite_option',
         ),
       ),
@@ -216,11 +216,11 @@ function lottovite_import_files() {
     array(
       'import_file_name'           => 'Wind Energy Slider',
       'categories'                 => array( 'Wind Energy' ),
-      'import_file_url'            => 'https://reactheme.com/products/demo-data/lottovite/default/wind-slider.xml',
+      'import_file_url'            => 'https://svtheme.com/products/demo-data/lottovite/default/wind-slider.xml',
              
       'import_redux'               => array(
         array(
-          'file_url'    => 'https://reactheme.com/products/demo-data/lottovite/default/lottovite-options.json',
+          'file_url'    => 'https://svtheme.com/products/demo-data/lottovite/default/lottovite-options.json',
           'option_name' => 'lottovite_option',
         ),
       ),
@@ -234,11 +234,11 @@ function lottovite_import_files() {
     array(
       'import_file_name'           => 'Solar Video Home',
       'categories'                 => array( 'Solar Video Home' ),
-      'import_file_url'            => 'https://reactheme.com/products/demo-data/lottovite/default/lottovite-content-5.xml',
+      'import_file_url'            => 'https://svtheme.com/products/demo-data/lottovite/default/lottovite-content-5.xml',
              
       'import_redux'               => array(
         array(
-          'file_url'    => 'https://reactheme.com/products/demo-data/lottovite/default/lottovite-options.json',
+          'file_url'    => 'https://svtheme.com/products/demo-data/lottovite/default/lottovite-options.json',
           'option_name' => 'lottovite_option',
         ),
       ),
@@ -253,11 +253,11 @@ function lottovite_import_files() {
     array(
       'import_file_name'           => 'Solar Shop',
       'categories'                 => array( 'Solar Shop' ),
-      'import_file_url'            => 'https://reactheme.com/products/demo-data/lottovite/default/lottovite-content-6.xml',
+      'import_file_url'            => 'https://svtheme.com/products/demo-data/lottovite/default/lottovite-content-6.xml',
              
       'import_redux'               => array(
         array(
-          'file_url'    => 'https://reactheme.com/products/demo-data/lottovite/default/lottovite-options.json',
+          'file_url'    => 'https://svtheme.com/products/demo-data/lottovite/default/lottovite-options.json',
           'option_name' => 'lottovite_option',
         ),
       ),
@@ -271,11 +271,11 @@ function lottovite_import_files() {
     array(
       'import_file_name'           => 'Solar Storage',
       'categories'                 => array( 'Solar Storage' ),
-      'import_file_url'            => 'https://reactheme.com/products/demo-data/lottovite/default/lottovite-content-7.xml',
+      'import_file_url'            => 'https://svtheme.com/products/demo-data/lottovite/default/lottovite-content-7.xml',
              
       'import_redux'               => array(
         array(
-          'file_url'    => 'https://reactheme.com/products/demo-data/lottovite/default/lottovite-options.json',
+          'file_url'    => 'https://svtheme.com/products/demo-data/lottovite/default/lottovite-options.json',
           'option_name' => 'lottovite_option',
         ),
       ),
@@ -289,11 +289,11 @@ function lottovite_import_files() {
     array(
       'import_file_name'           => 'Solar Installation',
       'categories'                 => array( 'Solar Installation' ),
-      'import_file_url'            => 'https://reactheme.com/products/demo-data/lottovite/default/lottovite-content-8.xml',
+      'import_file_url'            => 'https://svtheme.com/products/demo-data/lottovite/default/lottovite-content-8.xml',
              
       'import_redux'               => array(
         array(
-          'file_url'    => 'https://reactheme.com/products/demo-data/lottovite/default/lottovite-options.json',
+          'file_url'    => 'https://svtheme.com/products/demo-data/lottovite/default/lottovite-options.json',
           'option_name' => 'lottovite_option',
         ),
       ),
@@ -307,11 +307,11 @@ function lottovite_import_files() {
      array(
       'import_file_name'           => 'Green Energy',
       'categories'                 => array( 'Green Energy' ),
-      'import_file_url'            => 'https://reactheme.com/products/demo-data/lottovite/default/green-energy.xml',
+      'import_file_url'            => 'https://svtheme.com/products/demo-data/lottovite/default/green-energy.xml',
              
       'import_redux'               => array(
         array(
-          'file_url'    => 'https://reactheme.com/products/demo-data/lottovite/default/lottovite-green-options.json',
+          'file_url'    => 'https://svtheme.com/products/demo-data/lottovite/default/lottovite-green-options.json',
           'option_name' => 'lottovite_option',
         ),
       ),
@@ -325,11 +325,11 @@ function lottovite_import_files() {
     array(
       'import_file_name'           => 'Green Energy Video',
       'categories'                 => array( 'Green Energy' ),
-      'import_file_url'            => 'https://reactheme.com/products/demo-data/lottovite/default/green-energy-video.xml',
+      'import_file_url'            => 'https://svtheme.com/products/demo-data/lottovite/default/green-energy-video.xml',
              
       'import_redux'               => array(
         array(
-          'file_url'    => 'https://reactheme.com/products/demo-data/lottovite/default/lottovite-green-options.json',
+          'file_url'    => 'https://svtheme.com/products/demo-data/lottovite/default/lottovite-green-options.json',
           'option_name' => 'lottovite_option',
         ),
       ),
@@ -343,11 +343,11 @@ function lottovite_import_files() {
     array(
       'import_file_name'           => 'Green Energy Banner',
       'categories'                 => array( 'Green Energy' ),
-      'import_file_url'            => 'https://reactheme.com/products/demo-data/lottovite/default/green-energy-banner.xml',
+      'import_file_url'            => 'https://svtheme.com/products/demo-data/lottovite/default/green-energy-banner.xml',
              
       'import_redux'               => array(
         array(
-          'file_url'    => 'https://reactheme.com/products/demo-data/lottovite/default/lottovite-green-options.json',
+          'file_url'    => 'https://svtheme.com/products/demo-data/lottovite/default/lottovite-green-options.json',
           'option_name' => 'lottovite_option',
         ),
       ),
@@ -362,11 +362,11 @@ function lottovite_import_files() {
     array(
       'import_file_name'           => 'One Page 1',
       'categories'                 => array( 'OnePage' ),
-      'import_file_url'            => 'https://reactheme.com/products/demo-data/lottovite/onepage/content-1.xml',
+      'import_file_url'            => 'https://svtheme.com/products/demo-data/lottovite/onepage/content-1.xml',
              
       'import_redux'               => array(
         array(
-          'file_url'    => 'https://reactheme.com/products/demo-data/lottovite/default/lottovite-options.json',
+          'file_url'    => 'https://svtheme.com/products/demo-data/lottovite/default/lottovite-options.json',
           'option_name' => 'lottovite_option',
         ),
       ),
@@ -378,11 +378,11 @@ function lottovite_import_files() {
     array(
       'import_file_name'           => 'One Page 2',
       'categories'                 => array( 'OnePage' ),
-      'import_file_url'            => 'https://reactheme.com/products/demo-data/lottovite/onepage/content-2.xml',
+      'import_file_url'            => 'https://svtheme.com/products/demo-data/lottovite/onepage/content-2.xml',
              
       'import_redux'               => array(
         array(
-          'file_url'    => 'https://reactheme.com/products/demo-data/lottovite/default/lottovite-options.json',
+          'file_url'    => 'https://svtheme.com/products/demo-data/lottovite/default/lottovite-options.json',
           'option_name' => 'lottovite_option',
         ),
       ),
@@ -395,11 +395,11 @@ function lottovite_import_files() {
     array(
       'import_file_name'           => 'One Page 3',
       'categories'                 => array( 'OnePage' ),
-      'import_file_url'            => 'https://reactheme.com/products/demo-data/lottovite/onepage/content-3.xml',
+      'import_file_url'            => 'https://svtheme.com/products/demo-data/lottovite/onepage/content-3.xml',
              
       'import_redux'               => array(
         array(
-          'file_url'    => 'https://reactheme.com/products/demo-data/lottovite/default/lottovite-options.json',
+          'file_url'    => 'https://svtheme.com/products/demo-data/lottovite/default/lottovite-options.json',
           'option_name' => 'lottovite_option',
         ),
       ),
@@ -412,11 +412,11 @@ function lottovite_import_files() {
     array(
       'import_file_name'           => 'One Page 4',
       'categories'                 => array( 'OnePage' ),
-      'import_file_url'            => 'https://reactheme.com/products/demo-data/lottovite/onepage/content-4.xml',
+      'import_file_url'            => 'https://svtheme.com/products/demo-data/lottovite/onepage/content-4.xml',
              
       'import_redux'               => array(
         array(
-          'file_url'    => 'https://reactheme.com/products/demo-data/lottovite/default/lottovite-options.json',
+          'file_url'    => 'https://svtheme.com/products/demo-data/lottovite/default/lottovite-options.json',
           'option_name' => 'lottovite_option',
         ),
       ),
@@ -428,11 +428,11 @@ function lottovite_import_files() {
     array(
       'import_file_name'           => 'One Page 5',
       'categories'                 => array( 'OnePage' ),
-      'import_file_url'            => 'https://reactheme.com/products/demo-data/lottovite/onepage/content-5.xml',
+      'import_file_url'            => 'https://svtheme.com/products/demo-data/lottovite/onepage/content-5.xml',
              
       'import_redux'               => array(
         array(
-          'file_url'    => 'https://reactheme.com/products/demo-data/lottovite/default/lottovite-options.json',
+          'file_url'    => 'https://svtheme.com/products/demo-data/lottovite/default/lottovite-options.json',
           'option_name' => 'lottovite_option',
         ),
       ),
@@ -448,11 +448,11 @@ function lottovite_import_files() {
     array(
       'import_file_name'           => 'Wind Energy RTL',
       'categories'                 => array( 'RTL' ),
-      'import_file_url'            => 'https://reactheme.com/products/demo-data/lottovite/default/rtl/lottovite-content.xml',
+      'import_file_url'            => 'https://svtheme.com/products/demo-data/lottovite/default/rtl/lottovite-content.xml',
              
       'import_redux'               => array(
         array(
-          'file_url'    => 'https://reactheme.com/products/demo-data/lottovite/default/lottovite-options.json',
+          'file_url'    => 'https://svtheme.com/products/demo-data/lottovite/default/lottovite-options.json',
           'option_name' => 'lottovite_option',
         ),
       ),
@@ -465,11 +465,11 @@ function lottovite_import_files() {
     array(
       'import_file_name'           => 'Solar Energy RTL',
       'categories'                 => array( 'RTL' ),
-      'import_file_url'            => 'https://reactheme.com/products/demo-data/lottovite/default/rtl/lottovite-content-2.xml',
+      'import_file_url'            => 'https://svtheme.com/products/demo-data/lottovite/default/rtl/lottovite-content-2.xml',
              
       'import_redux'               => array(
         array(
-          'file_url'    => 'https://reactheme.com/products/demo-data/lottovite/default/lottovite-options.json',
+          'file_url'    => 'https://svtheme.com/products/demo-data/lottovite/default/lottovite-options.json',
           'option_name' => 'lottovite_option',
         ),
       ),
@@ -483,11 +483,11 @@ function lottovite_import_files() {
     array(
       'import_file_name'           => 'Renewable Energy RTL',
       'categories'                 => array( 'RTL' ),
-      'import_file_url'            => 'https://reactheme.com/products/demo-data/lottovite/default/rtl/lottovite-content-3.xml',
+      'import_file_url'            => 'https://svtheme.com/products/demo-data/lottovite/default/rtl/lottovite-content-3.xml',
              
       'import_redux'               => array(
         array(
-          'file_url'    => 'https://reactheme.com/products/demo-data/lottovite/default/lottovite-options.json',
+          'file_url'    => 'https://svtheme.com/products/demo-data/lottovite/default/lottovite-options.json',
           'option_name' => 'lottovite_option',
         ),
       ),
@@ -501,11 +501,11 @@ function lottovite_import_files() {
     array(
       'import_file_name'           => 'Hydro Power RTL',
       'categories'                 => array( 'RTL' ),
-      'import_file_url'            => 'https://reactheme.com/products/demo-data/lottovite/default/rtl/lottovite-content-4.xml',
+      'import_file_url'            => 'https://svtheme.com/products/demo-data/lottovite/default/rtl/lottovite-content-4.xml',
              
       'import_redux'               => array(
         array(
-          'file_url'    => 'https://reactheme.com/products/demo-data/lottovite/default/lottovite-options.json',
+          'file_url'    => 'https://svtheme.com/products/demo-data/lottovite/default/lottovite-options.json',
           'option_name' => 'lottovite_option',
         ),
       ),
@@ -519,11 +519,11 @@ function lottovite_import_files() {
     array(
       'import_file_name'           => 'Solar Video RTL',
       'categories'                 => array( 'RTL' ),
-      'import_file_url'            => 'https://reactheme.com/products/demo-data/lottovite/default/rtl/lottovite-content-5.xml',
+      'import_file_url'            => 'https://svtheme.com/products/demo-data/lottovite/default/rtl/lottovite-content-5.xml',
              
       'import_redux'               => array(
         array(
-          'file_url'    => 'https://reactheme.com/products/demo-data/lottovite/default/lottovite-options.json',
+          'file_url'    => 'https://svtheme.com/products/demo-data/lottovite/default/lottovite-options.json',
           'option_name' => 'lottovite_option',
         ),
       ),
@@ -538,11 +538,11 @@ function lottovite_import_files() {
     array(
       'import_file_name'           => 'Solar Shop',
       'categories'                 => array( 'Solar Shop' ),
-      'import_file_url'            => 'https://reactheme.com/products/demo-data/lottovite/default/rtl/lottovite-content-6.xml',
+      'import_file_url'            => 'https://svtheme.com/products/demo-data/lottovite/default/rtl/lottovite-content-6.xml',
              
       'import_redux'               => array(
         array(
-          'file_url'    => 'https://reactheme.com/products/demo-data/lottovite/default/lottovite-options.json',
+          'file_url'    => 'https://svtheme.com/products/demo-data/lottovite/default/lottovite-options.json',
           'option_name' => 'lottovite_option',
         ),
       ),

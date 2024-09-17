@@ -17,7 +17,7 @@
     $display_name   = get_the_author_meta( 'display_name' , $author_id );
  ?>
 
-<div class="reactheme-breadcrumbs porfolio-details">
+<div class="svtheme-breadcrumbs porfolio-details">
 <?php
 
 if (!empty($lottovite_option['blog_banner']['url'])) {?>
@@ -54,7 +54,7 @@ if (!empty($lottovite_option['blog_banner']['url'])) {?>
 </div>
     
 <?php }else{?>
-    <div class="reactheme-breadcrumbs-inner">
+    <div class="svtheme-breadcrumbs-inner">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">

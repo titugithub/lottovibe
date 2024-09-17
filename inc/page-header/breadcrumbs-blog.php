@@ -16,7 +16,7 @@
     $intro_content_banner = get_post_meta(get_queried_object_id(), 'intro_content_banner', true); 
 ?>
 
-<div class="reactheme-breadcrumbs  porfolio-details is-shop-hide rts-bread-crumb-area">
+<div class="svtheme-breadcrumbs  porfolio-details is-shop-hide rts-bread-crumb-area">
 <?php if($post_meta_data !='') { ?>
     <div class="breadcrumbs-single" style="background-image: url('<?php echo esc_url( $post_meta_data );?>')">
         <div class="<?php echo esc_attr($header_width);?>">
@@ -153,7 +153,7 @@
     </div>
   <?php }else {   
   ?>
-  <div class="reactheme-breadcrumbs-inner">  
+  <div class="svtheme-breadcrumbs-inner">  
     <div class="<?php echo esc_attr($header_width);?>">
       <div class="row">
         <div class="col-md-12">

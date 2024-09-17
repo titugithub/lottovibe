@@ -1,7 +1,7 @@
 /* ---------------------------
     Header Section 
 ------------------------------*/
-#reactheme-header {
+#svtheme-header {
     &.rts-default-header{
         background: #fff;
         .menu-area{
@@ -91,7 +91,7 @@
         color:var(--color-primary)
     }
 }
-.bread-gap .reactheme-breadcrumbs.porfolio-details{
+.bread-gap .svtheme-breadcrumbs.porfolio-details{
     margin-top: 0;
 }
 .primary-menu{
@@ -462,7 +462,7 @@ ul.offcanvas-icon{
         display: none;
     }
     &.offcanvas-icon{
-        .reactheme-offcanvas-right{
+        .svtheme-offcanvas-right{
             a{
                 display: block;   
                 font-size: 18px;            
@@ -487,7 +487,7 @@ ul.offcanvas-icon{
                     padding-bottom:20px;
                 }
             }
-            .reactheme-innner-offcanvas-content{
+            .svtheme-innner-offcanvas-content{
                 padding-left: 135px;
                 padding-top: 27px;
                 .widget{
@@ -640,7 +640,7 @@ transform: rotate(-45deg);
   height: 35px;
   width: 35px;
   cursor: pointer;
-  background: var(--color-primary);
+  background: var(--color-primary2);
   color: #fff;
   border-radius:3px;
 }
@@ -648,7 +648,7 @@ transform: rotate(-45deg);
 #mobile_menu .menu li ul.sub-menu li ul.sub-menu a {
   padding-left: 50px;
 }
-#reactheme-header .row-table .offcanvas-sec ul.offcanvas-icon {
+#svtheme-header .row-table .offcanvas-sec ul.offcanvas-icon {
   margin-top: 0;
 }
 #mobile_menu ul > li.menu-minimize > .submenu-button:before{
@@ -705,7 +705,7 @@ body.logged-in{
     }
 }
 
-#reactheme-header .row-table .offcanvas-sec ul.offcanvas-icon {
+#svtheme-header .row-table .offcanvas-sec ul.offcanvas-icon {
     margin-top: 0;
 }
 
@@ -752,7 +752,7 @@ ul.sub-menu ul ul li a:before{
 }
 
 
-#reactheme-header.header-style-1{
+#svtheme-header.header-style-1{
     &.fixed-header{
         .sticky-wrapper{     
             background: none;
@@ -845,71 +845,71 @@ ul.sub-menu ul ul li a:before{
     position: static !important;
 }
 
-#reactheme-header .menu-area .navbar ul > li.mega > ul {
+#svtheme-header .menu-area .navbar ul > li.mega > ul {
     width: 650px;    
 }
-#reactheme-header .menu-area .navbar ul > li.mega.classic > ul {
+#svtheme-header .menu-area .navbar ul > li.mega.classic > ul {
     transition: unset;
 }
 
 
-#reactheme-header .menu-area .navbar ul li.mega ul.sub-menu li a {
+#svtheme-header .menu-area .navbar ul li.mega ul.sub-menu li a {
     padding: 10px 0;
 }
-#reactheme-header .menu-area .navbar ul li.mega ul li a{   
+#svtheme-header .menu-area .navbar ul li.mega ul li a{   
     position:relative;
 }
-body #reactheme-header .menu-area .navbar ul li.mega.mega-normal ul li a{
+body #svtheme-header .menu-area .navbar ul li.mega.mega-normal ul li a{
     font-size: 14px;
     font-weight: normal;
     cursor: pointer;
 }
 
 
-#reactheme-header .menu-area .navbar ul li.mega ul > li a{
+#svtheme-header .menu-area .navbar ul li.mega ul > li a{
     cursor: pointer;
     &:after{
         display: none;
     }
 }
-#reactheme-header .menu-area .navbar ul > li.mega > ul li ul li a{
+#svtheme-header .menu-area .navbar ul > li.mega > ul li ul li a{
     border-bottom:none;
 }
 
-#reactheme-header .menu-area .navbar ul li.mega ul > li {
+#svtheme-header .menu-area .navbar ul li.mega ul > li {
     float: left !important;
 
 }
 
-#reactheme-header .menu-area .navbar ul li.mega ul li ul.sub-menu {
+#svtheme-header .menu-area .navbar ul li.mega ul li ul.sub-menu {
     display: block;
     width: 99%;
 }
-#reactheme-header .menu-area .navbar ul li.mega ul li ul li {
+#svtheme-header .menu-area .navbar ul li.mega ul li ul li {
     width: 100% !important;
     float: none !important;
     margin:0;
     padding: 0;
 }
-#reactheme-header .menu-area .navbar ul li.mega ul li ul.sub-menu {
+#svtheme-header .menu-area .navbar ul li.mega ul li ul.sub-menu {
     opacity: 1;
     transform: scaleY(1);
     visibility: visible;
     box-shadow: none;
 }
-#reactheme-header .menu-area .navbar ul li.mega ul li ul li:last-child a{
+#svtheme-header .menu-area .navbar ul li.mega ul li ul li:last-child a{
     border: none;
 }
-#reactheme-header .menu-area .navbar ul li.mega ul li ul li{
+#svtheme-header .menu-area .navbar ul li.mega ul li ul li{
     border: none;
 }
-#reactheme-header .menu-area nav.navbar ul li.mega ul li .sub-menu {
+#svtheme-header .menu-area nav.navbar ul li.mega ul li .sub-menu {
     position: relative;
     opacity: 1;
     transform: scaleY(1);
 }
 
-#reactheme-header .menu-area nav.navbar ul li.mega ul li .sub-menu {
+#svtheme-header .menu-area nav.navbar ul li.mega ul li .sub-menu {
     right: auto !important;
     left: auto !important;
     padding: 0;
@@ -932,7 +932,7 @@ nav.nav.navbar, .menu-area .col-sm-9.menu-responsive{
 }
 
 // offcanvas
-.reactheme-innner-offcanvas-contents{
+.svtheme-innner-offcanvas-contents{
     padding-top: 40px;
     .footer_social{
         margin: 30px 0 0;
@@ -999,7 +999,7 @@ nav.nav.navbar, .menu-area .col-sm-9.menu-responsive{
             display: block;
             z-index: 99;
             .close-button{
-                background: var(--color-primary);
+                background: var(--color-primary2);
                 color: #fff;
                 padding: 6px 6px;
                 display: block;                
@@ -1233,10 +1233,10 @@ body.on-offcanvas .menu-ofcn.off-open{
 }
 
 
-body .reactheme-testimonial-slider2 .testi-item .user-info > img{
+body .svtheme-testimonial-slider2 .testi-item .user-info > img{
     max-width: 100%;
 }
-.reactheme-video{
+.svtheme-video{
     &.default{
         .contents-area{
             position: relative;
@@ -1528,7 +1528,7 @@ figure.gallery-item{
     }
 }
 
-.reactheme-breadcrumbs{
+.svtheme-breadcrumbs{
     &.porfolio-details{     
         &.align-brea-lefts{
             .breadcrumbs-inner{
@@ -1544,7 +1544,7 @@ figure.gallery-item{
     }
 }
 
-.reactheme-footer .recent-post-widget .show-featured .post-desc i{
+.svtheme-footer .recent-post-widget .show-featured .post-desc i{
     color: $secondaryColor;
 }
 .recent-post-widget{
@@ -1565,7 +1565,7 @@ figure.gallery-item{
         }
     }
 }
-#reactheme-header{      
+#svtheme-header{      
     .menu-area .navbar-menu .mega.two-col .sub-menu{
         
         &:after{

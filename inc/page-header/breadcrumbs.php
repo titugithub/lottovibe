@@ -37,7 +37,7 @@ $intro_content_banner = get_post_meta(get_the_ID(), 'intro_content_banner', true
 ?>
 <?php if ($post_meta_data != '') {
   ?>
-  <div class="reactheme-breadcrumbs porfolio-details rts-bread-crumb-area">
+  <div class="svtheme-breadcrumbs porfolio-details rts-bread-crumb-area">
     <div class="breadcrumbs-single" style="background-image: url('<?php echo esc_url($post_meta_data); ?>')">
       <div class="<?php echo esc_attr($header_width); ?>">
         <div class="breadcrumbs-inner bread-<?php echo esc_attr($post_menu_type); ?>">
@@ -86,7 +86,7 @@ $intro_content_banner = get_post_meta(get_the_ID(), 'intro_content_banner', true
     </div>
   </div>
 <?php } elseif ($post_meta_data2 != '') { ?>
-  <div class="reactheme-breadcrumbs porfolio-details">
+  <div class="svtheme-breadcrumbs porfolio-details">
     <div class="breadcrumbs-single" style="background:<?php echo esc_attr($post_meta_data2); ?>">
       <div class="<?php echo esc_attr($header_width); ?>">
         <div class="breadcrumbs-inner bread-<?php echo esc_attr($post_menu_type); ?>">
@@ -131,8 +131,8 @@ $intro_content_banner = get_post_meta(get_the_ID(), 'intro_content_banner', true
 } else {
   $post_meta_bread = get_post_meta(get_the_ID(), 'select-bread', true); ?>
   <?php if ($post_meta_bread == 'show' || $post_meta_bread == '') { ?>
-    <div class="reactheme-breadcrumbs  porfolio-details">
-      <div class="reactheme-breadcrumbs-inner bread-<?php echo esc_attr($post_menu_type); ?>">
+    <div class="svtheme-breadcrumbs  porfolio-details">
+      <div class="svtheme-breadcrumbs-inner bread-<?php echo esc_attr($post_menu_type); ?>">
         <div class="<?php echo esc_attr($header_width); ?>">
           <div class="breadcrumbs-inner bread-<?php echo esc_attr($post_menu_type); ?>">
             <div class="row">

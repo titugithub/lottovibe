@@ -13,7 +13,7 @@
     $content_banner = get_post_meta(get_the_ID(), 'content_banner', true); 
 ?>
 
-<div class="reactheme-breadcrumbs  porfolio-details">
+<div class="svtheme-breadcrumbs  porfolio-details">
 
 <?php if($post_meta_data !='') { ?>
     <div class="breadcrumbs-single" style="background-image: url('<?php echo esc_url( $post_meta_data );?>')">
@@ -85,7 +85,7 @@ elseif (!empty($lottovite_option['service_single_image']['url'])) {?>
 </div>
     
 <?php }else{?>
-    <div class="reactheme-breadcrumbs-inner">
+    <div class="svtheme-breadcrumbs-inner">
           <div class="<?php echo esc_attr($header_width);?>">
             <div class="row">
               <div class="col-md-12 text-center">
