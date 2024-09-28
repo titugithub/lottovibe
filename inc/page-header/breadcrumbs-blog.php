@@ -23,7 +23,7 @@
             <div class="breadcrumbs-inner bread-<?php echo esc_attr($post_menu_type); ?>"> 
                 <div class="row">
             
-                <div class="col-lg-8 col-md-7">              
+                <div class="col-lg-12 col-md-12">              
                     <?php                       
                         
                         $post_meta_title = get_post_meta(get_queried_object_id(), 'select-title', true);?>
@@ -49,7 +49,7 @@
                     ?>    
                   </div>
 
-                  <div class="col-lg-4 col-md-5 text-md-right">
+                  <div class="col-lg-12 col-md-12 text-md-right">
                     <?php if(!empty($lottovite_option['off_breadcrumb'])){
                             $rs_breadcrumbs = get_post_meta(get_queried_object_id(), 'select-bread', true);
                             if( $rs_breadcrumbs != 'hide' ):        

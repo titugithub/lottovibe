@@ -20,7 +20,7 @@ if(!empty($lottovite_option['show_preloader']))
         
         <?php else: ?>
             <div id="lottovite-load">                
-                <div class="loader-container">
+                <div class="loader-container updown-fav">
                     <div class='loader-icon'><img src="<?php echo esc_url($preloader_img['url']);?>" alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>"></div>
                 </div>                            
             </div>

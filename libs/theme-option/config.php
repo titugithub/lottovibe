@@ -184,13 +184,7 @@ Redux::setSection(
                 'url' => true
             ),
 
-            array(
-                'id'       => 'off_sticky',
-                'type'     => 'switch',
-                'title'    => esc_html__('Enable Sticky Menu', 'lottovite'),
-                'subtitle' => esc_html__('You can show or hide sticky menu here', 'lottovite'),
-                'default'  => false,
-            ),  
+ 
             array(
                 'id'       => 'show_top_bottom',
                 'type'     => 'switch', 
@@ -293,133 +287,27 @@ Redux::setSection(
                 'subtitle'  => esc_html__('Select Primary Color.', 'lottovite'),
               
                 'validate'  => 'color',
-                'output'      => array('.react-heading .title-inner .sub-text,  .menu-area .navbar ul li:hover a'),
+                'output'      => null,
             ),
 
-
             array(
-                'id'        => 'link_text_color',
+                'id'        => 'secondary_color',
                 'type'      => 'color',
-                'title'     => esc_html__('Link Color', 'lottovite'),
-                'subtitle'  => esc_html__('Pick Link color', 'lottovite'),
-               
+                'title'     => esc_html__('Secondary Color', 'lottovite'),
+                'subtitle'  => esc_html__('Select Secondary Color.', 'lottovite'),
                 'validate'  => 'color',
-            ),
-
-            array(
-                'id'        => 'link_hover_text_color',
-                'type'      => 'color',
-                'title'     => esc_html__('Link Hover Color', 'lottovite'),
-                'subtitle'  => esc_html__('Pick link hover color', 'lottovite'),
               
-                'validate'  => 'color',
+              
             ),
+
+
 
         )
     )
 );
 
 
-//Button settings
-Redux::setSection(
-    $opt_name,
-    array(
-        'title'      => esc_html__('Button Style', 'lottovite'),
-        'desc'       => esc_html__('Button Style Here', 'lottovite'),
-        'subsection' => true,
-        'fields' => array(
 
-            array(
-                'id'        => 'btn_bg_color',
-                'type'      => 'color',
-                'title'     => esc_html__('Background Color', 'lottovite'),
-                'subtitle'  => esc_html__('Pick color', 'lottovite'),
-               
-                'validate'  => 'color',
-                'output'    => array('background-color' => '.react-button a')
-            ),
-
-            array(
-                'id'        => 'btn_bg_hover',
-                'type'      => 'color',
-                'title'     => esc_html__('Hover Background', 'lottovite'),
-                'subtitle'  => esc_html__('Pick color', 'lottovite'),
-              
-                'validate'  => 'color',
-                'output'    => array('background' => '.react-button a:hover')
-
-            ),          
-
-            array(
-                'id'        => 'btn_text_color',
-                'type'      => 'color',
-                'title'     => esc_html__('Text Color', 'lottovite'),
-                'subtitle'  => esc_html__('Pick color', 'lottovite'),
-            
-                'validate'  => 'color',
-                'output'    => array('.react-button a')
-            ),
-
-            array(
-                'id'        => 'btn_txt_hover_color',
-                'type'      => 'color',
-                'title'     => esc_html__('Hover Text Color', 'lottovite'),
-                'subtitle'  => esc_html__('Pick color', 'lottovite'),
-             
-                'validate'  => 'color',
-                'output'    => array('.react-button a:hover')
-            ),
-
-            array(
-                'id'     => 'notice_critical',
-                'type'   => 'info',
-                'notice' => true,
-                'style'  => 'success',
-                'title'  => esc_html__('Seconday Button Style', 'lottovite')            
-            ),
-            array(
-                'id'        => 'btn2_bg_color',
-                'type'      => 'color',
-                'title'     => esc_html__('Background Color', 'lottovite'),
-                'subtitle'  => esc_html__('Pick color', 'lottovite'),
-                
-                'validate'  => 'color',
-                'output'    => array('background-color' => '.react-button.secondary_btn a')
-            ),
-
-            array(
-                'id'        => 'btn2_bg_hover',
-                'type'      => 'color',
-                'title'     => esc_html__('Hover Background', 'lottovite'),
-                'subtitle'  => esc_html__('Pick color', 'lottovite'),
-              
-                'validate'  => 'color',
-                'output'    => array('background' => '.react-button.secondary_btn a:after')
-
-            ),
-            
-            array(
-                'id'        => 'btn2_text_color',
-                'type'      => 'color',
-                'title'     => esc_html__('Text Color', 'lottovite'),
-                'subtitle'  => esc_html__('Pick color', 'lottovite'),
-              
-                'validate'  => 'color',
-                'output'    => array('.react-button.secondary_btn a')
-            ),
-
-            array(
-                'id'        => 'btn2_txt_hover_color',
-                'type'      => 'color',
-                'title'     => esc_html__('Hover Text Color', 'lottovite'),
-                'subtitle'  => esc_html__('Pick color', 'lottovite'),
-              
-                'validate'  => 'color',
-                'output'    => array('.react-button.secondary_btn a:after')
-            ),
-        )
-    )
-);
 
 
 //Breadcrumb settings
@@ -673,52 +561,7 @@ Redux::setSection(
 
 );
 
-/*Team Sections*/
-Redux::setSection( $opt_name, array(
-    'title'            => esc_html__( 'Team Section', 'lottovite' ),
-    'id'               => 'team',
-    'customizer_width' => '450px',
-    'icon' => 'el el-user',
-    'fields'           => array(        
-    
-        array(
-            'id'       => 'team_single_image', 
-            'url'      => true,     
-            'title'    => esc_html__( 'Team Single page banner image', 'lottovite' ),                    
-            'type'     => 'media',
-                
-        ), 
 
-        array(
-            'id'       => 'team_details_text',                               
-            'title'    => esc_html__( 'Team Details Title', 'lottovite' ),
-            'subtitle' => esc_html__( 'Enter Title Here', 'lottovite' ),
-            'type'     => 'text',
-            'default'  => esc_html__('Team Details', 'lottovite'),
-            
-        ),
-
-        array(
-            'id'        => 'team_single_bg_color',
-            'type'      => 'color',                           
-            'title'     => esc_html__('Sinlge Team Body Backgroud Color','lottovite'),
-            'subtitle'  => esc_html__('Pick body background color', 'lottovite'),
-          
-            'validate'  => 'color',                        
-        ),
-        
-        array(
-                'id'       => 'team_slug',                               
-                'title'    => esc_html__( 'Team Slug', 'lottovite' ),
-                'subtitle' => esc_html__( 'Enter Team Slug Here', 'lottovite' ),
-                'type'     => 'text',
-                'default'  => esc_html__('teams', 'lottovite'),
-                
-            ),                 
-                      
-        )
-    ) 
-);
 
 if (class_exists('WooCommerce')) {
     Redux::setSection(
@@ -895,64 +738,7 @@ if (class_exists('WooCommerce')) {
         )
     );
 }
-Redux::setSection( $opt_name, array(
-    'title'            => esc_html__( 'Portfolio Section', 'lottovite' ),
-    'id'               => 'Portfolio',
-    'customizer_width' => '450px',
-    'icon' => 'el el-align-right',
-    'fields'           => array(
-    
-        array(
-                'id'       => 'department_single_image', 
-                'url'      => true,     
-                'title'    => esc_html__( 'Portfolio Single page banner image', 'lottovite' ),                    
-                'type'     => 'media',
-                
-        ),  
 
-         array(
-                'id'       => 'portfolio_slug',                               
-                'title'    => esc_html__( 'Portfolio Slug', 'lottovite' ),
-                'subtitle' => esc_html__( 'Enter Portfolio Slug Here', 'lottovite' ),
-                'type'     => 'text',
-                'default'  => 'rt-portfolios',                
-            ), 
-            array(
-                'id'       => 'portfolio_cat_slug',                               
-                'title'    => esc_html__( 'Portfolio Category Slug', 'lottovite' ),
-                'subtitle' => esc_html__( 'Enter Portfolio Cat Slug Here', 'lottovite' ),
-                'type'     => 'text',
-                'default'  => '',                    
-            ), 
-
-            array(
-                'id'       => 'portfolio_details',                               
-                'title'    => esc_html__( 'Portfolio Details Stroke Text', 'lottovite' ),
-                'subtitle' => esc_html__( 'Enter Text Here', 'lottovite' ),
-                'type'     => 'text',
-                'default'  => 'Portfolio Details',                    
-            ), 
-
-            array(
-                'id'        => 'portfolio_bg_color',
-                'type'      => 'color',
-                'title'     => esc_html__('Project Information Area Background', 'lottovite'),
-                'subtitle'  => esc_html__('Pick color', 'lottovite'),
-                'default'   => '',
-                'validate'  => 'color',
-                'output'    => array('background' => '.big-bg-porduct-details .project-info')
-            ),
-            array(
-                'id'        => 'portfolio_bg_border_color',
-                'type'      => 'color_rgba',
-                'title'     => esc_html__('Project Information Border Color', 'lottovite'),
-                'subtitle'  => esc_html__('Pick color', 'lottovite'),
-              
-                'output'    => array('border-color' => '.big-bg-porduct-details .project-info .info-body .single-info')
-            ),
-        )
-     ) 
-);
 /*Blog Sections*/
 Redux::setSection(
     $opt_name,

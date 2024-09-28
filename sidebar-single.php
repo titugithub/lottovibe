@@ -6,7 +6,7 @@ if ( !is_active_sidebar( 'sidebar-1' ) ) {
 if(is_home()){?>
 	<div class="col-lg-3 sticky-sidebar">
     <aside id="secondary" class="widget-area">
-      <div class="react-sideabr dynamic-sidebar">
+      <div class="sv-sideabr dynamic-sidebar">
         <?php		
              dynamic_sidebar('sidebar-1');
         ?>
@@ -20,7 +20,7 @@ else{
 	?>
 		<div class="col-lg-4 sticky-sidebar">
 		  <aside id="secondary" class="widget-area">
-		    <div class="react-sideabr dynamic-sidebar">
+		    <div class="sv-sideabr dynamic-sidebar">
 		      <?php
 				$page_sidebar = get_post_meta( $post->ID, 'custom_sidebar', true );
 				if( 'default' != $page_sidebar):
@@ -38,7 +38,7 @@ else{
 	elseif(is_active_sidebar( 'sidebar-1' )){ ?>
 		<div class="col-lg-3 sticky-sidebar">
 		    <aside id="secondary" class="widget-area">
-		      <div class="react-sideabr dynamic-sidebar">
+		      <div class="sv-sideabr dynamic-sidebar">
 		        <?php		
 		             dynamic_sidebar('sidebar-1');
 		        ?>

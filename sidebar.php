@@ -5,7 +5,7 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 ?>
 <div class="col-lg-4">
   <aside id="secondary" class="widget-area">
-    <div class="react-sideabr dynamic-sidebar">
+    <div class="sv-sideabr dynamic-sidebar">
       <?php
         dynamic_sidebar( 'sidebar-1' );
       ?>

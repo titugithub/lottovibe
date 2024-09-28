@@ -16,7 +16,7 @@
 	}
 	
 	if(is_singular('post')){
-		get_template_part( 'inc/page-header/breadcrumbs-single' );
+		get_template_part( 'inc/page-header/breadcrumbs' );
 	}
 
 	if(is_home() && !is_front_page() || is_home() && is_front_page()){

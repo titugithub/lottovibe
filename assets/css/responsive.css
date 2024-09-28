@@ -518,7 +518,7 @@ header .bg-remove {
 		min-width: 100%;
 	}
 
-	.handyman_tabs_btn .react-button a {
+	.handyman_tabs_btn .sv-button a {
 		width: 100%;
 	}
 
@@ -610,7 +610,7 @@ header .bg-remove {
 		padding-bottom: 5px;
 	}
 
-	body.single-post .react-sideabr {
+	body.single-post .sv-sideabr {
 		padding-top: 50px;
 	}
 
@@ -707,7 +707,7 @@ header .bg-remove {
 		padding: 20px 0 0 16px;
 	}
 
-	.react-sideabr .widget,
+	.sv-sideabr .widget,
 	.single-teams .team-inner,
 	.single-teams .details-tabs-area .team-detail-wrap {
 		padding-left: 20px;
@@ -725,7 +725,7 @@ header .bg-remove {
 		line-height: 35px;
 	}
 
-	.react-sideabr .widget_block label.wp-block-search__label, .react-sideabr .widget_block h2, .react-sideabr .widget-title {
+	.sv-sideabr .widget_block label.wp-block-search__label, .sv-sideabr .widget_block h2, .sv-sideabr .widget-title {
 		font-size: 22px;
 	}
 
@@ -815,7 +815,7 @@ header .bg-remove {
 		min-width: 100%;
 	}
 
-	.handyman_tabs_btn .react-button a {
+	.handyman_tabs_btn .sv-button a {
 		width: 100%;
 	}
 

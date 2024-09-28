@@ -8,8 +8,9 @@ function lottovite_scripts() {
 	wp_enqueue_style( 'tabler-icons', get_template_directory_uri() .'/assets/css/tabler-icons.min.css');
     wp_enqueue_style( 'magnific-popup', get_template_directory_uri() .'/assets/css/magnific-popup.css');
 	wp_enqueue_style( 'swiperrrr', get_template_directory_uri().'/assets/css/plugins/swiper.min.css' );
-	wp_enqueue_style( 'lottovite-style-default', get_template_directory_uri() .'/assets/scss/theme.css' );
+	wp_enqueue_style( 'lottovite-style-default', get_template_directory_uri() .'/assets/css/theme.css' );
 	wp_enqueue_style( 'lottovite-style-default-css', get_template_directory_uri() .'/assets/css/style.css' );
+	
 	wp_enqueue_style( 'lottovite-style-responsive', get_template_directory_uri() .'/assets/css/responsive.css' );
 	wp_enqueue_style( 'lottovite-style', get_stylesheet_uri() );		
 

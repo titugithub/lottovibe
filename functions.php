@@ -92,7 +92,8 @@ function lottovite_setup() {
 		'gallery',
 		'caption',
 	) );
-	
+
+
 
 	// Set up the WordPress core custom background feature.
 	add_theme_support( 'custom-background', apply_filters( 'lottovite_custom_background_args', array(
@@ -358,6 +359,14 @@ add_filter('get_search_form', 'custom_search_form');
 // Remove p tag from contact form 7
 
 add_filter('wpcf7_autop_or_not', '__return_false');
+
+
+
+
+
+
+
+
 
 
 

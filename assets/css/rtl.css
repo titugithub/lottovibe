@@ -84,7 +84,7 @@ body.rtl .air-condition-swiper-wrapper .swiper-wrapper .swiper-slide .single-cas
 body.rtl .inner-content-lottovite-blog .head .single i {
     margin-left: 10px;
 }
-body.rtl .react-video .popup-videos i {
+body.rtl .sv-video .popup-videos i {
   text-indent: -2px;
   transform: rotate(180deg);
 }
@@ -109,11 +109,11 @@ body.rtl .elementor-widget-icon-box.elementor-position-left .elementor-icon-box-
     order: 2;
 }
 
-body.rtl.single-post .react-order-list li {
+body.rtl.single-post .sv-order-list li {
     padding-right: 22px;
     padding-left: 0;
 }
-body.rtl.single-post .react-order-list li:before {
+body.rtl.single-post .sv-order-list li:before {
     right: 0;
     left: auto;
 }
@@ -127,18 +127,18 @@ body.rtl .svtheme-blog-details .author-block .author-desc {
     text-align: right;
 }
 
-body.rtl .react-sideabr .widget_block label.wp-block-search__label:after, 
-body.rtl .react-sideabr .widget_block h2:after, 
-body.rtl .react-sideabr .widget-title:after {
+body.rtl .sv-sideabr .widget_block label.wp-block-search__label:after, 
+body.rtl .sv-sideabr .widget_block h2:after, 
+body.rtl .sv-sideabr .widget-title:after {
     right: 0;
     left: auto;
 }
-body.rtl .react-sideabr .bs-search button {
+body.rtl .sv-sideabr .bs-search button {
     left: 0;
     right: auto;
 }
-body.rtl .react-sideabr .widget_search input, 
-body.rtl .react-sideabr .bs-search input {
+body.rtl .sv-sideabr .widget_search input, 
+body.rtl .sv-sideabr .bs-search input {
     padding-left: 65px;
     padding-right: 20px;
 }
@@ -148,13 +148,13 @@ body.rtl .show-featured .post-img {
     padding-left: 25px;
 }
 
-body.rtl .react-sideabr .widget_categories ul li span, 
-body.rtl .react-sideabr .widget_archive ul li span, 
-body.rtl .react-sideabr .widget_pages ul li span, 
-body.rtl .react-sideabr .widget_meta ul li span, 
-body.rtl .react-sideabr .widget_recent_entries ul li span, 
-body.rtl .react-sideabr .widget_nav_menu ul li span, 
-body.rtl .react-sideabr .widget_block ul li span {
+body.rtl .sv-sideabr .widget_categories ul li span, 
+body.rtl .sv-sideabr .widget_archive ul li span, 
+body.rtl .sv-sideabr .widget_pages ul li span, 
+body.rtl .sv-sideabr .widget_meta ul li span, 
+body.rtl .sv-sideabr .widget_recent_entries ul li span, 
+body.rtl .sv-sideabr .widget_nav_menu ul li span, 
+body.rtl .sv-sideabr .widget_block ul li span {
     float: left;
 }
 

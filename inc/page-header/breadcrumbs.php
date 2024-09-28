@@ -86,7 +86,7 @@ $intro_content_banner = get_post_meta(get_the_ID(), 'intro_content_banner', true
     </div>
   </div>
 <?php } elseif ($post_meta_data2 != '') { ?>
-  <div class="svtheme-breadcrumbs porfolio-details">
+  <div class="svtheme-breadcrumbs porfolio-details tttt">
     <div class="breadcrumbs-single" style="background:<?php echo esc_attr($post_meta_data2); ?>">
       <div class="<?php echo esc_attr($header_width); ?>">
         <div class="breadcrumbs-inner bread-<?php echo esc_attr($post_menu_type); ?>">
@@ -99,6 +99,7 @@ $intro_content_banner = get_post_meta(get_the_ID(), 'intro_content_banner', true
                   if ($rs_breadcrumbs != 'hide') :
                     if (function_exists('bcn_display')) { ?>
                     <div class="breadcrumbs-title 3"> <?php bcn_display(); ?></div>
+                   
               <?php }
                   endif;
                 } ?>
@@ -131,7 +132,7 @@ $intro_content_banner = get_post_meta(get_the_ID(), 'intro_content_banner', true
 } else {
   $post_meta_bread = get_post_meta(get_the_ID(), 'select-bread', true); ?>
   <?php if ($post_meta_bread == 'show' || $post_meta_bread == '') { ?>
-    <div class="svtheme-breadcrumbs  porfolio-details">
+    <div class="svtheme-breadcrumbs  porfolio-details tttt">
       <div class="svtheme-breadcrumbs-inner bread-<?php echo esc_attr($post_menu_type); ?>">
         <div class="<?php echo esc_attr($header_width); ?>">
           <div class="breadcrumbs-inner bread-<?php echo esc_attr($post_menu_type); ?>">

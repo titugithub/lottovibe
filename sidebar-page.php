@@ -5,7 +5,7 @@ if ( !is_active_sidebar( 'sidebar-1' ) ) {
 }
 if(is_home()){?>
     <aside id="secondary" class="widget-area">
-      <div class="react-sideabr dynamic-sidebar">
+      <div class="sv-sideabr dynamic-sidebar">
         <?php		
              dynamic_sidebar('sidebar-1');
         ?>
@@ -18,7 +18,7 @@ else{
 	?>
 		<div class="col-lg-4">
 		  <aside id="secondary" class="widget-area">
-		    <div class="react-sideabr dynamic-sidebar">
+		    <div class="sv-sideabr dynamic-sidebar">
 		      <?php
 				$page_sidebar = get_post_meta( $post->ID, 'custom_sidebar', true );
 		        dynamic_sidebar($page_sidebar);
