@@ -24,22 +24,22 @@ if ( $max_value && $min_value === $max_value ) {
 	<?php
 } else {
 
-	$labelledby = ! empty( $args['product_name'] ) ? sprintf( __( '%s quantity', 'solari' ), strip_tags( $args['product_name'] ) ) : '';
+	$labelledby = ! empty( $args['product_name'] ) ? sprintf( __( '%s quantity', 'lottovibe' ), strip_tags( $args['product_name'] ) ) : '';
 	?>
 	<div class="quantity">
-	    <label class="screen-reader-text" for="<?php echo esc_attr( $input_id ); ?>"><?php esc_html_e( 'Quantity', 'solari' ); ?></label>
+	    <label class="screen-reader-text" for="<?php echo esc_attr( $input_id ); ?>"><?php esc_html_e( 'Quantity', 'lottovibe' ); ?></label>
 	    <input type="button" value="-" class="qty_button minus" />
 	    <input
 	        type="number"
 	        id="<?php echo esc_attr( $input_id ); ?>"
 	        class="input-text qty text"
 	        step="<?php echo esc_attr( $step ); ?>"
-	        placeholder="<?php esc_attr_e( '0', 'solari' ) ?>"
+	        placeholder="<?php esc_attr_e( '0', 'lottovibe' ) ?>"
 	        min="<?php echo esc_attr( 0 < $min_value ? $min_value : '' ); ?>"	        
 	        max="<?php echo esc_attr( 0 < $max_value ? $max_value : '' ); ?>"
 	        name="<?php echo esc_attr( $input_name ); ?>"
 	        value="<?php echo esc_attr( $input_value ); ?>"
-	        title="<?php echo esc_attr_x( 'Qty', 'Product quantity input tooltip', 'solari' ); ?>"
+	        title="<?php echo esc_attr_x( 'Qty', 'Product quantity input tooltip', 'lottovibe' ); ?>"
 	        size="4"
 	        pattern="<?php echo esc_attr( $pattern ); ?>"
 	        inputmode="<?php echo esc_attr( $inputmode ); ?>" />

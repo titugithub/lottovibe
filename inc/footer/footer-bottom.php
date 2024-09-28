@@ -13,7 +13,9 @@
                 <?php }
                  else{
                     ?>
-                <p><?php echo esc_html('&copy;')?> <?php echo date("Y");?>. <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a> 
+                <p><?php echo esc_html('&copy;')?> <?php echo date("Y");?>. <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+                    <?php bloginfo( 'name' ); ?>
+                </a> 
                 </p>
                 <?php
                  }   

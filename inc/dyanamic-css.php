@@ -43,10 +43,10 @@ function lottovite_dynamic_colors()
     ?>
     <style>
         :root {
-            --body-bg-color: <?php echo $body_bg_color; ?>;
-            --body-text-color: <?php echo $body_text_color; ?>;
-            --primary-color: <?php echo $primary_color; ?>;
-            --secondary-color: <?php echo $secondary_color; ?>;
+            --body-bg-color: <?php echo esc_attr($body_bg_color); ?>;
+            --body-text-color: <?php echo esc_attr($body_text_color); ?>;
+            --primary-color: <?php echo esc_attr($primary_color); ?>;
+            --secondary-color: <?php echo esc_attr($secondary_color); ?>;
         }
 
         body {
@@ -55,7 +55,7 @@ function lottovite_dynamic_colors()
         }
 
         <?php foreach ($typography_settings as $heading => $props) : ?>
-            <?php echo $heading; ?> {
+            <?php echo esc_attr($heading); ?> {
                 <?php if ($props['color']) { ?>color: <?php echo sanitize_hex_color($props['color']); ?>;<?php } ?>
                 <?php if ($props['font-family']) { ?>font-family: <?php echo esc_attr($props['font-family']); ?>;<?php } ?>
                 <?php if ($props['font-size']) { ?>font-size: <?php echo esc_attr($props['font-size']); ?>;<?php } ?>

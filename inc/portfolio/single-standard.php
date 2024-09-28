@@ -34,7 +34,7 @@
 								<div class="writing-content">
 								<a href="<?php echo esc_url( $url_next ) ?>"><span><?php echo esc_html__('Previous', 'lottovite'); ?></span>
 									<h6 class="title">
-									<?php echo esc_attr( $title ); ?>
+									<?php echo esc_html( $title ); ?>
 									</h6></a>
 								</div>
 							</div>
@@ -48,7 +48,7 @@
                             <div class="writing-content">
 							<a href="<?php echo esc_url( $url_previous ) ?>"><span><?php echo esc_html__('Next', 'lottovite'); ?></span>
                                 <h6 class="title">
-								<?php echo esc_attr( $title ); ?>
+								<?php echo esc_html( $title ); ?>
                                 </h6></a>
                             </div>
                             <div class="icon-1">
