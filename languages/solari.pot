@@ -384,11 +384,11 @@ msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
 msgstr ""
 
 #: libs/theme-option/config.php:37 libs/theme-option/config.php:38
-msgid "lottovite Options"
+msgid "lottovibe Options"
 msgstr ""
 
 #: libs/theme-option/config.php:144 libs/theme-option/config.php:146
-msgid "<p>lottovite Theme</p>"
+msgid "<p>lottovibe Theme</p>"
 msgstr ""
 
 #: libs/theme-option/config.php:165

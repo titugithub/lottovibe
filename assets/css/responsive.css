@@ -3,7 +3,7 @@
 *
 * -----------------------------------------------------------------------------
 *
-* Template : lottovite -  Handyman Solution WordPress Theme
+* Template : lottovibe -  Handyman Solution WordPress Theme
 *
 * ----------------------------------------------------------------------------
 *
@@ -64,7 +64,7 @@ header .bg-remove {
 	.page-error .error-image {
 		max-width: 75%;
 	}
-	.feature-item-lottovite-area .right-img-area{
+	.feature-item-lottovibe-area .right-img-area{
 		width: 70px;
 	}
 }
@@ -543,7 +543,7 @@ header .bg-remove {
 		padding: 10px 15px !important
 	}
 
-	.single-project-lottovite-h3 .name-social-area-wrapper {
+	.single-project-lottovibe-h3 .name-social-area-wrapper {
 	  	opacity: 1 !important;
 	  	bottom: 0 !important;
 	}

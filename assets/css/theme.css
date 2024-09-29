@@ -8045,7 +8045,7 @@ a:hover, a:active {
 /*-------------------------
     33.Preloader CSS
 ---------------------------*/
-#lottovite-load {
+#lottovibe-load {
   position: fixed;
   top: 0;
   left: 0;
@@ -8062,7 +8062,7 @@ a:hover, a:active {
   height: 100%;
 }
 
-#lottovite-load .preloader {
+#lottovibe-load .preloader {
   width: 50px;
   height: 50px;
   display: inline-block;
@@ -8080,7 +8080,7 @@ a:hover, a:active {
   animation: updown 1.3s linear infinite;
 }
 
-#lottovite-load .preloader span {
+#lottovibe-load .preloader span {
   position: absolute;
   display: inline-block;
   width: 50px;
@@ -8090,7 +8090,7 @@ a:hover, a:active {
   animation: preloader 1.3s linear infinite;
 }
 
-#lottovite-load .preloader span:last-child {
+#lottovibe-load .preloader span:last-child {
   animation-delay: -0.8s;
   -webkit-animation-delay: -0.8s;
 }

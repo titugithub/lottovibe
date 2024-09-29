@@ -2,14 +2,14 @@
 /*
 Header Style
 */
-global $lottovite_option;
-$sticky             = !empty($lottovite_option['off_sticky']) ? $lottovite_option['off_sticky'] : ''; 
+global $lottovibe_option;
+$sticky             = !empty($lottovibe_option['off_sticky']) ? $lottovibe_option['off_sticky'] : ''; 
 $sticky_menu        = ($sticky == 1) ? ' menu-sticky' : '';
-$drob_aligns        = (!empty($lottovite_option['drob_align_s'])) ? 'menu-drob-align' : '';
-$mobile_hide_search = (!empty($lottovite_option['mobile_off_search'])) ? 'mobile-hide-search' : '';
-$mobile_hide_cart   = (!empty($lottovite_option['mobile_off_cart'])) ? 'mobile-hide-cart-no' : 'mobile-hide-cart';
-$mobile_hide_button = (!empty($lottovite_option['mobile_off_button'])) ? 'mobile-hide-button' : '';
-$mobile_logo_height =!empty($lottovite_option['mobile_logo_height']) ? 'style = "max-height: '.$lottovite_option['mobile_logo_height'].'"' : '';
+$drob_aligns        = (!empty($lottovibe_option['drob_align_s'])) ? 'menu-drob-align' : '';
+$mobile_hide_search = (!empty($lottovibe_option['mobile_off_search'])) ? 'mobile-hide-search' : '';
+$mobile_hide_cart   = (!empty($lottovibe_option['mobile_off_cart'])) ? 'mobile-hide-cart-no' : 'mobile-hide-cart';
+$mobile_hide_button = (!empty($lottovibe_option['mobile_off_button'])) ? 'mobile-hide-button' : '';
+$mobile_logo_height =!empty($lottovibe_option['mobile_logo_height']) ? 'style = "max-height: '.$lottovibe_option['mobile_logo_height'].'"' : '';
 
 // Header Options here
 require get_parent_theme_file_path('inc/header/header-options.php');
@@ -25,9 +25,9 @@ if(is_page() || is_single()){
 	$post_meta_header = get_post_meta(get_queried_object_id(), 'header_select', true);
 }
 
-$lottovite_header_id = !empty($lottovite_option['header_layout']) ? $lottovite_option['header_layout'] : '';
+$lottovibe_header_id = !empty($lottovibe_option['header_layout']) ? $lottovibe_option['header_layout'] : '';
 
-$get_id = !empty($post_meta_header) ? $post_meta_header : $lottovite_header_id;
+$get_id = !empty($post_meta_header) ? $post_meta_header : $lottovibe_header_id;
 $headser_postion = get_post_meta($get_id, 'header-position', true);
 $get_header = ($headser_postion == 'on') ? 'fixed-header' : '';
 

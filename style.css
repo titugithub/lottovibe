@@ -1,15 +1,19 @@
 /*
-Theme Name: lottovite
-Theme URI: https://lottovite.themewant.com/
-Author: svthemes
-Author URI: http://www.svtheme.com
-Description: lottovite - Solar Energy WordPress Theme
-Version: 1.1.5
+Theme Name: Lottovibe
+Theme URI: https://softivuslab.com/wp/lottovibe
+Author: Pixelaxis
+Author URI: https://softivuslab.com/
+Description: Lottovibe - Online Lotto & Lottery  WordPress Theme
+Requires at least: 4.9
+Tested up to: 6.5
+Requires PHP: 7.0
+Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
-Text Domain: lottovite
-Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready, creative, portfolio
+Text Domain: intellicon
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready, portfolio
 */
+
 
 /*--------------------------------------------------------------
 
@@ -1615,4 +1619,13 @@ body.woocommerce-js ul.products li {
 .woocommerce ul.products li:hover a.button {
   background: unset !important;
   color: #fff;
+}
+
+.copyright.text-center p {
+  color: #fff !important;
+}
+
+
+.summary.entry-summary del span {
+  text-decoration: line-through;
 }

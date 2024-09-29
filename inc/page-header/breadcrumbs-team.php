@@ -1,5 +1,5 @@
 <?php
-    global $lottovite_option;       
+    global $lottovibe_option;       
 ?>
 <?php 
     $post_meta_data = get_post_meta(get_the_ID(), 'banner_image', true);
@@ -18,14 +18,14 @@
                     $post_meta_title = get_post_meta(get_the_ID(), 'select-title', true);?>
                     <?php if( $post_meta_title != 'hide' ){             
                     ?>
-                    <?php if(!empty($lottovite_option['team_page_subtitle'])) : ?>
-                        <span class="sub-title"><?php echo esc_html($lottovite_option['team_page_subtitle']);?></span>
+                    <?php if(!empty($lottovibe_option['team_page_subtitle'])) : ?>
+                        <span class="sub-title"><?php echo esc_html($lottovibe_option['team_page_subtitle']);?></span>
                     <?php endif; ?>
                     <h1 class="page-title">
-                        <?php if(!empty($lottovite_option['team_page_title'])){
-                            echo esc_html($lottovite_option['team_page_title']);
+                        <?php if(!empty($lottovibe_option['team_page_title'])){
+                            echo esc_html($lottovibe_option['team_page_title']);
                             }else{
-                               echo esc_html('Team Details', 'lottovite');
+                               echo esc_html('Team Details', 'lottovibe');
                             }
                         ?>
                     </h1>
@@ -34,7 +34,7 @@
                 ?>    
               </div>
               <div class="col-lg-12">
-                <?php if(!empty($lottovite_option['off_breadcrumb'])){
+                <?php if(!empty($lottovibe_option['off_breadcrumb'])){
                     $rs_breadcrumbs = get_post_meta(get_the_ID(), 'select-bread', true);
                     if( $rs_breadcrumbs != 'hide' ):        
                     if(function_exists('bcn_display')){?>
@@ -49,20 +49,20 @@
     </div>
 <?php }
 
-elseif (!empty($lottovite_option['team_single_image']['url'])) {?>
-<div class="breadcrumbs-single" style="background-image: url('<?php echo esc_url( $lottovite_option['team_single_image']['url'] );?>')">
+elseif (!empty($lottovibe_option['team_single_image']['url'])) {?>
+<div class="breadcrumbs-single" style="background-image: url('<?php echo esc_url( $lottovibe_option['team_single_image']['url'] );?>')">
     <div class="container">
          <div class="breadcrumbs-inner bread-<?php echo esc_attr($post_menu_type); ?>"> 
             <div class="row">  
                 <div class="col-lg-12">             
                     <div class="wrapper">
-                        <?php if(!empty($lottovite_option['team_details_text'])) : ?>
-                            <span class="bg-text-stok"><?php echo esc_html($lottovite_option['team_details_text']);?></span>
+                        <?php if(!empty($lottovibe_option['team_details_text'])) : ?>
+                            <span class="bg-text-stok"><?php echo esc_html($lottovibe_option['team_details_text']);?></span>
                         
                         <?php $post_meta_title = get_post_meta(get_the_ID(), 'select-title', true);?>
                         <?php if( $post_meta_title != 'hide' ){ ?>
                             <h1 class="page-title">
-                            <?php echo esc_html($lottovite_option['team_details_text']);?>
+                            <?php echo esc_html($lottovibe_option['team_details_text']);?>
                             </h1> 
                         <?php } ?>
                         <?php endif; ?>
@@ -70,7 +70,7 @@ elseif (!empty($lottovite_option['team_single_image']['url'])) {?>
                     </div>
                 </div>       
                 <div class="col-lg-12">
-                    <?php if(!empty($lottovite_option['off_breadcrumb'])){
+                    <?php if(!empty($lottovibe_option['off_breadcrumb'])){
                         $rs_breadcrumbs = get_post_meta(get_the_ID(), 'select-bread', true);
                         if( $rs_breadcrumbs != 'hide' ):        
                         if(function_exists('bcn_display')){?>
@@ -100,7 +100,7 @@ elseif (!empty($lottovite_option['team_single_image']['url'])) {?>
                             <?php if($content_banner !=''){
                                echo esc_html($content_banner);
                             } else {
-                               echo esc_html('Team Details', 'lottovite');
+                               echo esc_html('Team Details', 'lottovibe');
                             }
                             ?>
                         </h1>

@@ -1,5 +1,5 @@
 <?php
-    global $lottovite_option;    
+    global $lottovibe_option;    
 
 
 ?>
@@ -8,14 +8,12 @@
         <div class="copyright_border">
             
             <div class="copyright text-center" <?php if(!empty( $copy_space)): ?> style="padding: <?php echo esc_attr($copy_space); ?>" <?php endif; ?> >
-                <?php if(!empty($lottovite_option['copyright'])){?>
-                <p><?php echo wp_kses($lottovite_option['copyright'], 'lottovite'); ?></p>
+                <?php if(!empty($lottovibe_option['copyright'])){?>
+                <p><?php echo wp_kses($lottovibe_option['copyright'], 'lottovibe'); ?></p>
                 <?php }
                  else{
                     ?>
-                <p><?php echo esc_html('&copy;')?> <?php echo date("Y");?>. <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-                    <?php bloginfo( 'name' ); ?>
-                </a> 
+                <p class="footer-bottom-text"><?php echo esc_html('Copyright &copy;')?> <?php echo date("Y");?> <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>. <?php echo esc_html('Designed By Pixelaxis')?>
                 </p>
                 <?php
                  }   

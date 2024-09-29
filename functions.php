@@ -1,6 +1,6 @@
 <?php
 
-if ( ! function_exists( 'lottovite_setup' ) ) :
+if ( ! function_exists( 'lottovibe_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  *
@@ -9,14 +9,14 @@ if ( ! function_exists( 'lottovite_setup' ) ) :
  * as indicating support for post thumbnails.
  */ 
 
-function lottovite_setup() {
+function lottovibe_setup() {
 	/*
 	 * Make theme available for translation.
 	 * Translations can be filed in the /languages/ directory.
-	 * If you're building a theme based on lottovite, use a find and replace
-	 * to change 'lottovite' to the name of your theme in all the template files.
+	 * If you're building a theme based on lottovibe, use a find and replace
+	 * to change 'lottovibe' to the name of your theme in all the template files.
 	 */
-	load_theme_textdomain( 'lottovite', get_template_directory() . '/languages' );
+	load_theme_textdomain( 'lottovibe', get_template_directory() . '/languages' );
 
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
@@ -29,7 +29,7 @@ function lottovite_setup() {
 	add_theme_support( 'title-tag' );	
 	add_theme_support( 'woocommerce' );	
 	
-	function lottovite_change_excerpt( $text )
+	function lottovibe_change_excerpt( $text )
 	{
 		$pos = strrpos( $text, '[');
 		if ($pos === false)
@@ -39,11 +39,11 @@ function lottovite_setup() {
 		
 		return rtrim (substr($text, 0, $pos) ) . '...';
 	}
-	add_filter('get_the_excerpt', 'lottovite_change_excerpt');
+	add_filter('get_the_excerpt', 'lottovibe_change_excerpt');
 
 
 	// Limit Excerpt Length by number of Words
-	function lottovite_custom_excerpt( $limit ) {
+	function lottovibe_custom_excerpt( $limit ) {
 		$excerpt = explode(' ', get_the_excerpt(), $limit);
 		if (count($excerpt)>=$limit) {
 		array_pop($excerpt);
@@ -77,8 +77,8 @@ function lottovite_setup() {
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
-		'menu-1' => esc_html__( 'Primary Menu', 'lottovite' ),		
-		'menu-2' => esc_html__( 'Single Menu', 'lottovite' ),
+		'menu-1' => esc_html__( 'Primary Menu', 'lottovibe' ),		
+		'menu-2' => esc_html__( 'Single Menu', 'lottovibe' ),
 		
 	) );
 	/*
@@ -96,7 +96,7 @@ function lottovite_setup() {
 
 
 	// Set up the WordPress core custom background feature.
-	add_theme_support( 'custom-background', apply_filters( 'lottovite_custom_background_args', array(
+	add_theme_support( 'custom-background', apply_filters( 'lottovibe_custom_background_args', array(
 		'default-color' => 'ffffff',
 		'default-image' => '',
 	) ) );
@@ -130,15 +130,15 @@ function lottovite_setup() {
 add_theme_support( 'align-wide' );	
 }
 endif;
-add_action( 'after_setup_theme', 'lottovite_setup' );
+add_action( 'after_setup_theme', 'lottovibe_setup' );
 
 /**
 *Custom Image Size
 */
-add_image_size( 'lottovite-blog-sideabr', 87, 87, true );
-add_image_size( 'lottovite-blog-grid',550, 350, true );
-add_image_size( 'lottovite-blog-grid-large',608, 282, true );
-add_image_size( 'lottovite-blog-grid-medium',420, 378, true );
+add_image_size( 'lottovibe-blog-sideabr', 87, 87, true );
+add_image_size( 'lottovibe-blog-grid',550, 350, true );
+add_image_size( 'lottovibe-blog-grid-large',608, 282, true );
+add_image_size( 'lottovibe-blog-grid-medium',420, 378, true );
 add_image_size( 'project-home-one',483, 501, true );
 add_image_size( 'project-home-three',312, 360, true );
 add_image_size( 'team-home-three',312, 220, true );
@@ -148,8 +148,8 @@ add_image_size( 'project-details-three',540, 620, true );
 add_image_size( 'project-details-four',312, 360, true );
 add_image_size( 'team-home-three',312, 220, true );
 add_image_size( 'poject-four',948, 700, true );
-add_image_size( 'lottovite-blog-grid-small',232, 232, true );
-add_image_size( 'lottovite-blog-gridtwo',416, 500, true );
+add_image_size( 'lottovibe-blog-grid-small',232, 232, true );
+add_image_size( 'lottovibe-blog-gridtwo',416, 500, true );
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
@@ -158,10 +158,10 @@ add_image_size( 'lottovite-blog-gridtwo',416, 500, true );
  *
  * @global int $content_width
  */
-function lottovite_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'lottovite_content_width', 640 );
+function lottovibe_content_width() {
+	$GLOBALS['content_width'] = apply_filters( 'lottovibe_content_width', 640 );
 }
-add_action( 'after_setup_theme', 'lottovite_content_width', 0 );
+add_action( 'after_setup_theme', 'lottovibe_content_width', 0 );
 
 
 /**
@@ -222,7 +222,7 @@ if ( ! class_exists( 'reduxNewsflash' ) ):
     }
 endif;
 
-function lottovite_remove_demo_mode_link() { // Be sure to rename this function to something more unique
+function lottovibe_remove_demo_mode_link() { // Be sure to rename this function to something more unique
     if ( class_exists('ReduxFrameworkPlugin') ) {
         remove_action( 'plugin_row_meta', array( ReduxFrameworkPlugin::get_instance(), 'plugin_metalinks'), null, 2 );
     }
@@ -230,43 +230,43 @@ function lottovite_remove_demo_mode_link() { // Be sure to rename this function 
         remove_action('admin_notices', array( ReduxFrameworkPlugin::get_instance(), 'admin_notices' ) );    
     }
 }
-add_action('init', 'lottovite_remove_demo_mode_link');
+add_action('init', 'lottovibe_remove_demo_mode_link');
 
 /**
  * Registers an editor stylesheet for the theme.
  */
-function lottovite_theme_add_editor_styles() {
+function lottovibe_theme_add_editor_styles() {
     add_editor_style( 'css/custom-editor-style.css' );
 }
-add_action( 'admin_init', 'lottovite_theme_add_editor_styles' );
+add_action( 'admin_init', 'lottovibe_theme_add_editor_styles' );
 
 
 //------------------------------------------------------------------------
 //Organize Comments form field
 //-----------------------------------------------------------------------
-function lottovite_wpb_move_comment_field_to_bottom( $fields ) {
+function lottovibe_wpb_move_comment_field_to_bottom( $fields ) {
 	$comment_field = $fields['comment'];
 	unset( $fields['comment'] );
 	$fields['comment'] = $comment_field;
 	return $fields;
 }
 
-add_filter( 'comment_form_fields', 'lottovite_wpb_move_comment_field_to_bottom' );	
+add_filter( 'comment_form_fields', 'lottovibe_wpb_move_comment_field_to_bottom' );	
 
 
 //adding placeholder text for comment form
 
-function lottovite_comment_textarea_placeholder( $args ) {
+function lottovibe_comment_textarea_placeholder( $args ) {
 	$args['comment_field']        = str_replace( '<textarea', '<textarea placeholder="Comment"', $args['comment_field'] );
 	return $args;
 }
-add_filter( 'comment_form_defaults', 'lottovite_comment_textarea_placeholder' );
+add_filter( 'comment_form_defaults', 'lottovibe_comment_textarea_placeholder' );
 
 /**
  * Comment Form Fields Placeholder
  *
  */
-function lottovite_comment_form_fields( $fields ) {
+function lottovibe_comment_form_fields( $fields ) {
 	foreach( $fields as &$field ) {
 		$field = str_replace( 'id="author"', 'id="author" placeholder="Name*"', $field );
 		$field = str_replace( 'id="email"', 'id="email" placeholder="Email*"', $field );
@@ -274,7 +274,7 @@ function lottovite_comment_form_fields( $fields ) {
 	}
 	return $fields;
 }
-add_filter( 'comment_form_default_fields', 'lottovite_comment_form_fields' );
+add_filter( 'comment_form_default_fields', 'lottovibe_comment_form_fields' );
 
 
 //customize archive tilte
@@ -289,15 +289,15 @@ add_filter( 'get_the_archive_title', function ($title) {
     return $title;
 });
 
-add_filter( 'get_the_archive_title', 'lottovite_archive_title_remove_prefix' );
-function lottovite_archive_title_remove_prefix( $title ) {
+add_filter( 'get_the_archive_title', 'lottovibe_archive_title_remove_prefix' );
+function lottovibe_archive_title_remove_prefix( $title ) {
 	if ( is_post_type_archive() ) {
 		$title = post_type_archive_title( '', false );
 	}
 	return $title;
 }
 
-function lottovite_menu_add_description_to_menu($item_output, $item, $depth, $args) {
+function lottovibe_menu_add_description_to_menu($item_output, $item, $depth, $args) {
 
    if (strlen($item->description) > 0 ) {
       // append description after link
@@ -306,27 +306,27 @@ function lottovite_menu_add_description_to_menu($item_output, $item, $depth, $ar
    }   
    return $item_output;
 }
-add_filter('walker_nav_menu_start_el', 'lottovite_menu_add_description_to_menu', 10, 4);
+add_filter('walker_nav_menu_start_el', 'lottovibe_menu_add_description_to_menu', 10, 4);
 
-add_filter('wp_list_categories', 'lottovite_cat_count_span');
-function lottovite_cat_count_span($links) {
+add_filter('wp_list_categories', 'lottovibe_cat_count_span');
+function lottovibe_cat_count_span($links) {
   $links = str_replace('</a> (', '</a> <span>(', $links);
   $links = str_replace(')', ')</span>', $links);
   return $links;
 }
 
-function lottovite_style_the_archive_count($links) {
+function lottovibe_style_the_archive_count($links) {
     $links = str_replace('</a>&nbsp;(', '</a> <span class="archiveCount">(', $links);
     $links = str_replace(')', ')</span>', $links);
     return $links;
 }
 
-add_filter('get_archives_link', 'lottovite_style_the_archive_count');
+add_filter('get_archives_link', 'lottovibe_style_the_archive_count');
 
 /**
  * Post title array
  */
-function lottovite_get_postTitleArray($postType = 'post' ){
+function lottovibe_get_postTitleArray($postType = 'post' ){
     $post_type_query  = new WP_Query(
         array (
             'post_type'      => $postType,
@@ -341,7 +341,7 @@ function lottovite_get_postTitleArray($postType = 'post' ){
     if ( is_array($posts_array) ) {
         $post_title_array = wp_list_pluck($posts_array, 'post_title', 'ID' );
     } else {
-        $post_title_array['default'] = esc_html__( 'Default', 'lottovite' );
+        $post_title_array['default'] = esc_html__( 'Default', 'lottovibe' );
     }
     return $post_title_array;
 }
@@ -359,6 +359,11 @@ add_filter('get_search_form', 'custom_search_form');
 // Remove p tag from contact form 7
 
 add_filter('wpcf7_autop_or_not', '__return_false');
+
+
+
+
+
 
 
 

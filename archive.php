@@ -10,9 +10,9 @@ get_header();?>
        $column      = '';
        $blog_grid   = '';
 
-       if (!empty($lottovite_option['blog-layout']) || !is_active_sidebar('sidebar-1')) {
-           $blog_layout = !empty($lottovite_option['blog-layout']) ? $lottovite_option['blog-layout'] : '';
-           $blog_grid   = !empty($lottovite_option['blog-grid']) ? $lottovite_option['blog-grid'] : '';
+       if (!empty($lottovibe_option['blog-layout']) || !is_active_sidebar('sidebar-1')) {
+           $blog_layout = !empty($lottovibe_option['blog-layout']) ? $lottovibe_option['blog-layout'] : '';
+           $blog_grid   = !empty($lottovibe_option['blog-grid']) ? $lottovibe_option['blog-grid'] : '';
            $blog_grid   = !empty($blog_grid) ? $blog_grid : '12';
            if ($blog_layout == 'full' || !is_active_sidebar('sidebar-1')) {
                $layout = 'full-layout';
@@ -71,9 +71,9 @@ get_header();?>
                                         <!-- single info -->
                                         <div class="single-info">
                                             <i class="rt rt-circle-user-regular"></i>
-                                            <span>  <?php echo esc_html__('by', 'lottovite');?>  
-                                                <?php if(!empty($lottovite_option['blog-author-post'])){
-                                                if ($lottovite_option['blog-author-post'] == 'show'): 
+                                            <span>  <?php echo esc_html__('by', 'lottovibe');?>  
+                                                <?php if(!empty($lottovibe_option['blog-author-post'])){
+                                                if ($lottovibe_option['blog-author-post'] == 'show'): 
                                                     $last_name = get_user_meta( $author_id, 'last_name', true );
                                                     $first_name = get_user_meta( $author_id, 'first_name', true );
                                                     if( !empty($first_name) && !empty($last_name)){
@@ -106,8 +106,8 @@ get_header();?>
                                         <!-- single info -->
                                         <div class="single-info cat">
                                             <i class="rt rt-tags"></i>
-                                            <span> <?php if(!empty($lottovite_option['blog-category'])){
-                                                if($lottovite_option['blog-category'] == 'show'){
+                                            <span> <?php if(!empty($lottovibe_option['blog-category'])){
+                                                if($lottovibe_option['blog-category'] == 'show'){
                                                     if(get_the_category()):
                                                         the_category(', ');                                                 
                                                 endif;
@@ -144,14 +144,14 @@ get_header();?>
                                   </div>
 
                                     <div class="blog-desc">   
-                                        <?php echo lottovite_custom_excerpt(25);?>                                     
+                                        <?php echo lottovibe_custom_excerpt(25);?>                                     
                                     </div>                                     
                                     <?php                                     
                                           
-                                        if(!empty($lottovite_option['blog_readmore'])):?>
+                                        if(!empty($lottovibe_option['blog_readmore'])):?>
                                             <div class="blog-button">
                                                 <a href="<?php the_permalink();?>">
-                                                    <?php echo esc_html($lottovite_option['blog_readmore']); ?>
+                                                    <?php echo esc_html($lottovibe_option['blog_readmore']); ?>
                                                 </a>
                                             </div>
                                     <?php endif; ?>

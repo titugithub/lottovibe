@@ -1,9 +1,9 @@
 <?php
-function lottovite_widgets_init() {
+function lottovibe_widgets_init() {
 	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', 'lottovite' ),
+		'name'          => esc_html__( 'Sidebar', 'lottovibe' ),
 		'id'            => 'sidebar-1',
-		'description'   => esc_html__( 'This is sidebar area for blog post and single post.', 'lottovite' ),
+		'description'   => esc_html__( 'This is sidebar area for blog post and single post.', 'lottovibe' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
 		'before_title'  => '<h2 class="widget-title">',
@@ -11,9 +11,9 @@ function lottovite_widgets_init() {
 	) );
 
 	register_sidebar( array(
-		'name'          => esc_html__( 'Shop Sidebar', 'lottovite' ),
+		'name'          => esc_html__( 'Shop Sidebar', 'lottovibe' ),
 		'id'            => 'sidebar-2',
-		'description'   => esc_html__( 'This is sidebar area for shop page.', 'lottovite' ),
+		'description'   => esc_html__( 'This is sidebar area for shop page.', 'lottovibe' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
 		'before_title'  => '<h2 class="widget-title">',
@@ -21,4 +21,4 @@ function lottovite_widgets_init() {
 	) );
 			
 }
-add_action( 'widgets_init', 'lottovite_widgets_init' );
+add_action( 'widgets_init', 'lottovibe_widgets_init' );

@@ -11,7 +11,7 @@ if( !empty($next_post) || !empty($previous_post)):?>
 				  	<li class="prev">
 				  		<div class="inner-pre">
 						    <a href="<?php echo esc_url( $url_next ) ?>">
-						    	<span class="next_link"><?php echo esc_html__('Previous Post', 'lottovite'); ?></span>
+						    	<span class="next_link"><?php echo esc_html__('Previous Post', 'lottovibe'); ?></span>
 						    	<span class="link_text"> <?php echo esc_html( $title ); ?></span>
 							</a>
 						</div>
@@ -23,7 +23,7 @@ if( !empty($next_post) || !empty($previous_post)):?>
 				  	<li class="next">
 				  		<div class="inner-next">
 						    <a href="<?php echo esc_url( $url_previous ) ?>">
-						    	<span class="next_link"><?php echo esc_html__('Next Post', 'lottovite'); ?></span>
+						    	<span class="next_link"><?php echo esc_html__('Next Post', 'lottovibe'); ?></span>
 						    	<span class="link_text"><?php echo esc_html( $title ); ?> </span>
 							</a>
 						</div>

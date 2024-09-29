@@ -1,10 +1,10 @@
 <?php
-    global $lottovite_option;    
+    global $lottovibe_option;    
     $header_width_meta = get_post_meta(get_the_ID(), 'header_width_custom', true);
     if ($header_width_meta != ''){
         $header_width = ( $header_width_meta == 'full' ) ? 'container-fluid': 'container';
     }else{
-        $header_width = $lottovite_option['header-grid'];
+        $header_width = $lottovibe_option['header-grid'];
         $header_width = ( $header_width == 'full' ) ? 'container-fluid': 'container';
     }
 ?>
@@ -34,7 +34,7 @@
                         ?>
                     </h1>
                     <?php } 
-                    if(!empty($lottovite_option['off_breadcrumb'])){
+                    if(!empty($lottovibe_option['off_breadcrumb'])){
                         $rs_breadcrumbs = get_post_meta(get_the_ID(), 'select-bread', true);
                         if( $rs_breadcrumbs != 'hide' ):        
                         if(function_exists('bcn_display')){?>
@@ -50,8 +50,8 @@
     </div>
 <?php }
 
-elseif (!empty($lottovite_option['service_single_image']['url'])) {?>
-<div class="breadcrumbs-single" style="background-image: url('<?php echo esc_url( $lottovite_option['service_single_image']['url'] );?>')">
+elseif (!empty($lottovibe_option['service_single_image']['url'])) {?>
+<div class="breadcrumbs-single" style="background-image: url('<?php echo esc_url( $lottovibe_option['service_single_image']['url'] );?>')">
     <div class="<?php echo esc_attr($header_width);?>">
       <div class="row">
         <div class="col-md-12 text-center">
@@ -69,7 +69,7 @@ elseif (!empty($lottovite_option['service_single_image']['url'])) {?>
                     ?>
                 </h1>
                 <?php } 
-                if(!empty($lottovite_option['off_breadcrumb'])){
+                if(!empty($lottovibe_option['off_breadcrumb'])){
                     $rs_breadcrumbs = get_post_meta(get_the_ID(), 'select-bread', true);
                     if( $rs_breadcrumbs != 'hide' ):        
                     if(function_exists('bcn_display')){?>
@@ -103,7 +103,7 @@ elseif (!empty($lottovite_option['service_single_image']['url'])) {?>
                             ?>
                         </h1>
                     <?php } 
-                     if(!empty($lottovite_option['off_breadcrumb'])){
+                     if(!empty($lottovibe_option['off_breadcrumb'])){
                         $rs_breadcrumbs = get_post_meta(get_the_ID(), 'select-bread', true);
                         if( $rs_breadcrumbs != 'hide' ):        
                         if(function_exists('bcn_display')){?>

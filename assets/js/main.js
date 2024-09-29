@@ -195,8 +195,8 @@
 
   //preloader
   $(window).on("load", function () {
-    $("#lottovite-load").delay(400).fadeOut(200);
-    $(".lottovite-loader").delay(400).fadeOut(200);
+    $("#lottovibe-load").delay(400).fadeOut(200);
+    $(".lottovibe-loader").delay(400).fadeOut(200);
 
     if ($(window).width() < 992) {
       $(".svtheme-menu").css("height", "0");

@@ -6,7 +6,7 @@
         if ($header_width_meta != ''){
             $header_width = ( $header_width_meta == 'full' ) ? 'container-fluid': 'container';
         }else{            
-            $header_width = !empty($lottovite_option['header-grid']) ? $lottovite_option['header-grid'] : '';
+            $header_width = !empty($lottovibe_option['header-grid']) ? $lottovibe_option['header-grid'] : '';
             $header_width = ( $header_width == 'full' ) ? 'container-fluid': 'container';
         }
         $footer_style          = get_post_meta(get_queried_object_id(), 'footer_style', true);
@@ -38,7 +38,7 @@
         if ($header_width_meta != ''){
             $header_width = ( $header_width_meta == 'full' ) ? 'container-fluid': 'container';
         }else{
-            $header_width = !empty($lottovite_option['header-grid']) ? $lottovite_option['header-grid'] : '';
+            $header_width = !empty($lottovibe_option['header-grid']) ? $lottovibe_option['header-grid'] : '';
             $header_width = ( $header_width == 'full' ) ? 'container-fluid': 'container';
         }
 

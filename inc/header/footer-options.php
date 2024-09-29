@@ -6,7 +6,7 @@
         if ($header_width_meta != ''){
             $header_width = ( $header_width_meta == 'full' ) ? 'container-fluid': 'container';
         }else{
-            $header_width = $lottovite_option['header-grid'];
+            $header_width = $lottovibe_option['header-grid'];
             $header_width = ( $header_width == 'full' ) ? 'container-fluid': 'container';
         }
 
@@ -30,7 +30,7 @@
         if ($header_width_meta != ''){
             $header_width = ( $header_width_meta == 'full' ) ? 'container-fluid': 'container';
         }else{
-            $header_width = $lottovite_option['header-grid'];
+            $header_width = $lottovibe_option['header-grid'];
             $header_width = ( $header_width == 'full' ) ? 'container-fluid': 'container';
         }
 

@@ -1,5 +1,5 @@
 <?php
-    global $lottovite_option;  
+    global $lottovibe_option;  
     $post_meta_data = get_post_meta(get_the_ID(), 'banner_image', true); 
     $post_menu_type = get_post_meta(get_the_ID(), 'menu-type', true); 
     $content_banner = get_post_meta(get_the_ID(), 'content_banner', true); 
@@ -33,7 +33,7 @@
                     <div class="col-lg-12">                                  
                         <?php 
                       
-                            if(!empty($lottovite_option['off_breadcrumb'])){
+                            if(!empty($lottovibe_option['off_breadcrumb'])){
                                 $rs_breadcrumbs = get_post_meta(get_the_ID(), 'select-bread', true);
                                 if( $rs_breadcrumbs != 'hide' ):        
                                     if(function_exists('bcn_display')){?>
@@ -49,17 +49,17 @@
         </div>
     </div>
 <?php }
-elseif (!empty($lottovite_option['department_single_image']['url'])) {
+elseif (!empty($lottovibe_option['department_single_image']['url'])) {
     ?>
-    <div class="breadcrumbs-single" style="background-image: url('<?php echo esc_url( $lottovite_option['department_single_image']['url'] );?>')">
+    <div class="breadcrumbs-single" style="background-image: url('<?php echo esc_url( $lottovibe_option['department_single_image']['url'] );?>')">
         <div class="container">
             <div class="breadcrumbs-inner bread-<?php echo esc_attr($post_menu_type); ?>">
                 <div class="row">        
                   
                     <div class="col-lg-12">             
                         <div class="wrapper">
-                            <?php if(!empty($lottovite_option['portfolio_details'])) : ?>
-                                <span class="bg-text-stok"><?php echo esc_html($lottovite_option['portfolio_details']);?></span>
+                            <?php if(!empty($lottovibe_option['portfolio_details'])) : ?>
+                                <span class="bg-text-stok"><?php echo esc_html($lottovibe_option['portfolio_details']);?></span>
                             <?php endif; ?>
                             <?php $post_meta_title = get_post_meta(get_the_ID(), 'select-title', true);?>
                             <?php if( $post_meta_title != 'hide' ){ ?>
@@ -75,7 +75,7 @@ elseif (!empty($lottovite_option['department_single_image']['url'])) {
                     <div class="col-lg-12">                                  
                      <?php 
                    
-                         if(!empty($lottovite_option['off_breadcrumb'])){
+                         if(!empty($lottovibe_option['off_breadcrumb'])){
                              $rs_breadcrumbs = get_post_meta(get_the_ID(), 'select-bread', true);
                              if( $rs_breadcrumbs != 'hide' ):        
                                  if(function_exists('bcn_display')){?>
@@ -113,7 +113,7 @@ elseif (!empty($lottovite_option['department_single_image']['url'])) {
                  <div class="col-lg-12">                                  
                      <?php 
                    
-                         if(!empty($lottovite_option['off_breadcrumb'])){
+                         if(!empty($lottovibe_option['off_breadcrumb'])){
                              $rs_breadcrumbs = get_post_meta(get_the_ID(), 'select-bread', true);
                              if( $rs_breadcrumbs != 'hide' ):        
                                  if(function_exists('bcn_display')){?>

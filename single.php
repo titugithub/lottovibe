@@ -1,6 +1,6 @@
 <?php
     get_header();
-    global $lottovite_option;
+    global $lottovibe_option;
     $post_id      = get_the_id();
     $author_id    = get_post_field ('post_author', $post_id);
     $display_name = get_the_author_meta( 'display_name' , $author_id );
@@ -69,7 +69,7 @@
                     }
                     else
                         {
-                        $blog_author = $lottovite_option['blog-comments'];
+                        $blog_author = $lottovibe_option['blog-comments'];
                         if($blog_author == 'show'){     
                         // If comments are open or we have at least one comment, load up the comment template.
                         if ( comments_open() || get_comments_number() ) :

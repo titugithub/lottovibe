@@ -1,6 +1,6 @@
 <?php
 $settings = '';
-global $lottovite_option;
+global $lottovibe_option;
 $post_id     = get_the_ID();
 $product     = wc_get_product($post_id);
 $rating      = $product->get_average_rating();

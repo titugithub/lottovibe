@@ -1,11 +1,11 @@
 <?php
-    global $lottovite_option;    
+    global $lottovibe_option;    
     $header_width_meta = get_post_meta(get_queried_object_id(), 'header_width_custom', true);
 
     if ($header_width_meta != ''){
         $header_width = ( $header_width_meta == 'full' ) ? 'container-fluid': 'container';
     }else{
-        $header_width = !empty($lottovite_option['header-grid']) ? $lottovite_option['header-grid'] : '';
+        $header_width = !empty($lottovibe_option['header-grid']) ? $lottovibe_option['header-grid'] : '';
         $header_width = ( $header_width == 'full' ) ? 'container-fluid': 'container';
     }
 
@@ -20,8 +20,8 @@
 <div class="svtheme-breadcrumbs porfolio-details">
 <?php
 
-if (!empty($lottovite_option['blog_banner']['url'])) {?>
-<div class="breadcrumbs-single" style="background-image: url('<?php echo esc_url( $lottovite_option['blog_banner']['url'] );?>')">
+if (!empty($lottovibe_option['blog_banner']['url'])) {?>
+<div class="breadcrumbs-single" style="background-image: url('<?php echo esc_url( $lottovibe_option['blog_banner']['url'] );?>')">
     <div class="<?php echo esc_attr($header_width);?>">       
             
                 <div class="breadcrumbs-inner bread-<?php echo esc_attr($post_menu_type); ?>"> 
@@ -40,7 +40,7 @@ if (!empty($lottovite_option['blog_banner']['url'])) {?>
                         ?>    
                     </div>
                     <div class="col-lg-12">
-                        <?php if(!empty($lottovite_option['off_breadcrumb'])){
+                        <?php if(!empty($lottovibe_option['off_breadcrumb'])){
                             if(function_exists('bcn_display')){?>
                                 <div class="breadcrumbs-title"> <?php  bcn_display();?></div>
                             <?php } 

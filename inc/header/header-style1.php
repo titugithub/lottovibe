@@ -3,14 +3,14 @@
 /*
 Header Style 1
 */
-global $lottovite_option;
-$sticky             = !empty($lottovite_option['off_sticky']) ? $lottovite_option['off_sticky'] : ''; 
+global $lottovibe_option;
+$sticky             = !empty($lottovibe_option['off_sticky']) ? $lottovibe_option['off_sticky'] : ''; 
 $sticky_menu        = ($sticky == 1) ? ' menu-sticky' : '';
-$drob_aligns        = (!empty($lottovite_option['drob_align_s'])) ? 'menu-drob-align' : '';
-$mobile_hide_search = (!empty($lottovite_option['mobile_off_search'])) ? 'mobile-hide-search' : '';
-$mobile_hide_cart   = (!empty($lottovite_option['mobile_off_cart'])) ? 'mobile-hide-cart-no' : 'mobile-hide-cart';
-$mobile_hide_button = (!empty($lottovite_option['mobile_off_button'])) ? 'mobile-hide-button' : '';
-$mobile_logo_height = !empty($lottovite_option['mobile_logo_height']) ? 'style = "max-height: '.$lottovite_option['mobile_logo_height'].'"' : '';
+$drob_aligns        = (!empty($lottovibe_option['drob_align_s'])) ? 'menu-drob-align' : '';
+$mobile_hide_search = (!empty($lottovibe_option['mobile_off_search'])) ? 'mobile-hide-search' : '';
+$mobile_hide_cart   = (!empty($lottovibe_option['mobile_off_cart'])) ? 'mobile-hide-cart-no' : 'mobile-hide-cart';
+$mobile_hide_button = (!empty($lottovibe_option['mobile_off_button'])) ? 'mobile-hide-button' : '';
+$mobile_logo_height = !empty($lottovibe_option['mobile_logo_height']) ? 'style = "max-height: '.$lottovibe_option['mobile_logo_height'].'"' : '';
 
 // Header Options here
 require get_parent_theme_file_path('inc/header/header-options.php');
@@ -32,13 +32,13 @@ get_template_part('inc/header/off-canvas');
 <?php
 $menu_bg_color = !empty($menu_bg) ? 'style=background:'.$menu_bg.'' : '';
 ?>   
-<div class="menu-area menu_type_<?php echo esc_attr($main_menu_type);?>" <?php echo wp_kses($menu_bg_color, 'lottovite');?>>    
+<div class="menu-area menu_type_<?php echo esc_attr($main_menu_type);?>" <?php echo wp_kses($menu_bg_color, 'lottovibe');?>>    
     <div class="menu_one">
             <div class="row-table"> 
             <div class="col-cell header-logo">
                 <?php 
-                 if (!empty( $lottovite_option['wplogo_mobile_rt']['url'] ) ) { ?>
-                  <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img <?php echo wp_kses($mobile_logo_height, 'lottovite');?> src="<?php echo esc_url( $lottovite_option['wplogo_mobile_rt']['url']); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>"></a>
+                 if (!empty( $lottovibe_option['wplogo_mobile_rt']['url'] ) ) { ?>
+                  <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img <?php echo wp_kses($mobile_logo_height, 'lottovibe');?> src="<?php echo esc_url( $lottovibe_option['wplogo_mobile_rt']['url']); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>"></a>
                 <?php }else{
                  get_template_part('inc/header/logo'); 
                 } ?>

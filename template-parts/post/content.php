@@ -1,13 +1,13 @@
 <?php
-global $lottovite_option;
+global $lottovibe_option;
 ?>
 <div class="single-content-full">
     <div class="user-info">
         <!-- single info -->
         <div class="single-info">
             <i class="rt rt-circle-user-regular"></i>
-            <span><?php echo esc_html__('by', 'lottovite');?>  <?php if(!empty($lottovite_option['blog-author-post'])){
-                if ($lottovite_option['blog-author-post'] == 'show'): ?>                                                                                         
+            <span><?php echo esc_html__('by', 'lottovibe');?>  <?php if(!empty($lottovibe_option['blog-author-post'])){
+                if ($lottovibe_option['blog-author-post'] == 'show'): ?>                                                                                         
                     
                     
                     <?php
@@ -43,8 +43,8 @@ global $lottovite_option;
     <!-- single info -->
     <div class="single-info cat">
         <i class="rt rt-tags"></i>
-        <span> <?php if(!empty($lottovite_option['blog-category'])){
-            if($lottovite_option['blog-category'] == 'show'){
+        <span> <?php if(!empty($lottovibe_option['blog-category'])){
+            if($lottovibe_option['blog-category'] == 'show'){
                 if(get_the_category()):
                     the_category(', ');                                                 
             endif;
@@ -76,7 +76,7 @@ global $lottovite_option;
             the_content();
 
             wp_link_pages( array(
-              'before'      => '<div class="page-links">' . esc_html__( 'Pages:', 'lottovite' ),
+              'before'      => '<div class="page-links">' . esc_html__( 'Pages:', 'lottovibe' ),
               'after'       => '</div>',
               'link_before' => '<span class="page-number">',
               'link_after'  => '</span>',
@@ -90,7 +90,7 @@ global $lottovite_option;
                     //tag add
                     $seperator = ''; // blank instead of comma
                     $after = '';
-                    echo esc_html__( 'Tags: ', 'lottovite' );
+                    echo esc_html__( 'Tags: ', 'lottovibe' );
                     the_tags( '', $seperator, $after );
                 ?>             
             </div> 

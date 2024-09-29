@@ -5,7 +5,7 @@
     <!-- .entry-header -->
     
     <div class="entry-summary">
-        <p>   <?php echo lottovite_custom_excerpt(30);?>   </p>       
+        <p>   <?php echo lottovibe_custom_excerpt(30);?>   </p>       
     </div>
     <!-- .entry-summary -->
 

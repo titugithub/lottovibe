@@ -32,7 +32,7 @@
 								</a>
 								</div>
 								<div class="writing-content">
-								<a href="<?php echo esc_url( $url_next ) ?>"><span><?php echo esc_html__('Previous', 'lottovite'); ?></span>
+								<a href="<?php echo esc_url( $url_next ) ?>"><span><?php echo esc_html__('Previous', 'lottovibe'); ?></span>
 									<h6 class="title">
 									<?php echo esc_html( $title ); ?>
 									</h6></a>
@@ -46,7 +46,7 @@
                         <?php if($previous_post):?>	
 						<div class="right-icon-area single">
                             <div class="writing-content">
-							<a href="<?php echo esc_url( $url_previous ) ?>"><span><?php echo esc_html__('Next', 'lottovite'); ?></span>
+							<a href="<?php echo esc_url( $url_previous ) ?>"><span><?php echo esc_html__('Next', 'lottovibe'); ?></span>
                                 <h6 class="title">
 								<?php echo esc_html( $title ); ?>
                                 </h6></a>

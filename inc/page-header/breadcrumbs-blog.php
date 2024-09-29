@@ -1,10 +1,10 @@
 <?php
-    global $lottovite_option;    
+    global $lottovibe_option;    
     $header_width_meta = get_post_meta(get_queried_object_id(), 'header_width_custom', true);
     if ($header_width_meta != ''){
         $header_width = ( $header_width_meta == 'full' ) ? 'container-fluid': 'container';
     }else{
-        $header_width = !empty($lottovite_option['header-grid']) ? $lottovite_option['header-grid'] : '';
+        $header_width = !empty($lottovibe_option['header-grid']) ? $lottovibe_option['header-grid'] : '';
         $header_width = ( $header_width == 'full' ) ? 'container-fluid': 'container';
     }
 ?>
@@ -36,11 +36,11 @@
                                echo esc_html($content_banner);
                                 } else {                              
                                     
-                                    if(!empty($lottovite_option['blog_title'])) { ?>
-                                        <?php echo esc_html($lottovite_option['blog_title']);?>
+                                    if(!empty($lottovibe_option['blog_title'])) { ?>
+                                        <?php echo esc_html($lottovibe_option['blog_title']);?>
                                         <?php }
                                         else{
-                                         esc_html_e('Blog','lottovite');
+                                         esc_html_e('Blog','lottovibe');
                                     } 
                                 }
                             ?>
@@ -50,7 +50,7 @@
                   </div>
 
                   <div class="col-lg-12 col-md-12 text-md-right">
-                    <?php if(!empty($lottovite_option['off_breadcrumb'])){
+                    <?php if(!empty($lottovibe_option['off_breadcrumb'])){
                             $rs_breadcrumbs = get_post_meta(get_queried_object_id(), 'select-bread', true);
                             if( $rs_breadcrumbs != 'hide' ):        
                             if(function_exists('bcn_display')){?>
@@ -64,8 +64,8 @@
         </div>
     </div>
 <?php }
-    elseif(!empty($lottovite_option['blog_banner_main']['url'])) { ?>
-    <div class="breadcrumbs-single" style="background-image: url('<?php echo esc_url($lottovite_option['blog_banner_main']['url']);?>')">
+    elseif(!empty($lottovibe_option['blog_banner_main']['url'])) { ?>
+    <div class="breadcrumbs-single" style="background-image: url('<?php echo esc_url($lottovibe_option['blog_banner_main']['url']);?>')">
         <div class="<?php echo esc_attr($header_width);?>">
             <div class="breadcrumbs-inner bread-<?php echo esc_attr($post_menu_type); ?>"> 
             <div class="row">                
@@ -74,22 +74,22 @@
                     $post_meta_title = get_post_meta(get_queried_object_id(), 'select-title', true);?>
                     <?php if( $post_meta_title != 'hide' ){    ?>            
                         <div class="wrapper">
-                            <?php if(!empty($lottovite_option['blog_title'])) : ?>
-                                <span class="bg-text-stok"><?php echo esc_html($lottovite_option['blog_title']);?></span>
+                            <?php if(!empty($lottovibe_option['blog_title'])) : ?>
+                                <span class="bg-text-stok"><?php echo esc_html($lottovibe_option['blog_title']);?></span>
                             <?php endif; ?>
                             <h1 class="page-title">               
-                                <?php if(!empty($lottovite_option['blog_title'])) { ?>
-                                    <?php echo esc_html($lottovite_option['blog_title']);?>
+                                <?php if(!empty($lottovibe_option['blog_title'])) { ?>
+                                    <?php echo esc_html($lottovibe_option['blog_title']);?>
                                     <?php }
                                     else{
-                                    esc_html_e('Blog','lottovite');
+                                    esc_html_e('Blog','lottovibe');
                                 } ?>
                             </h1>
                         </div>
                     <?php } ?>    
                 </div>  
                 <div class="col-lg-12">
-                    <?php if(!empty($lottovite_option['off_breadcrumb'])){
+                    <?php if(!empty($lottovibe_option['off_breadcrumb'])){
                         $rs_breadcrumbs = get_post_meta(get_queried_object_id(), 'select-bread', true);
                         if( $rs_breadcrumbs != 'hide' ):        
                         if(function_exists('bcn_display')){?>
@@ -104,8 +104,8 @@
     </div>
   <?php }
   
-  elseif(!empty($lottovite_option['breadcrumb_bg_color'])) { ?>
-    <div class="breadcrumbs-single" style="background:<?php echo esc_attr($lottovite_option['breadcrumb_bg_color']);?>">
+  elseif(!empty($lottovibe_option['breadcrumb_bg_color'])) { ?>
+    <div class="breadcrumbs-single" style="background:<?php echo esc_attr($lottovibe_option['breadcrumb_bg_color']);?>">
       <div class="<?php echo esc_attr($header_width);?>">
         <div class="breadcrumbs-inner bread-<?php echo esc_attr($post_menu_type); ?>"> 
         <div class="row">
@@ -124,11 +124,11 @@
                              echo esc_html($content_banner);
                               } else {                              
                                   
-                                  if(!empty($lottovite_option['blog_title'])) { ?>
-                                      <?php echo esc_html($lottovite_option['blog_title']);?>
+                                  if(!empty($lottovibe_option['blog_title'])) { ?>
+                                      <?php echo esc_html($lottovibe_option['blog_title']);?>
                                       <?php }
                                       else{
-                                       esc_html_e('Blog','lottovite');
+                                       esc_html_e('Blog','lottovibe');
                                   } 
                               }
                             ?>
@@ -138,7 +138,7 @@
                 </div>
 
                 <div class="col-lg-12 col-md-12">
-                  <?php if(!empty($lottovite_option['off_breadcrumb'])){
+                  <?php if(!empty($lottovibe_option['off_breadcrumb'])){
                           $rs_breadcrumbs = get_post_meta(get_queried_object_id(), 'select-bread', true);
                           if( $rs_breadcrumbs != 'hide' ):        
                           if(function_exists('bcn_display')){?>
@@ -159,7 +159,7 @@
         <div class="col-md-12">
             <div class="breadcrumbs-inner bread-<?php echo esc_attr($post_menu_type); ?>">
                 <?php     
-                    if(!empty($lottovite_option['off_breadcrumb'])){
+                    if(!empty($lottovibe_option['off_breadcrumb'])){
                         $rs_breadcrumbs = get_post_meta(get_queried_object_id(), 'select-bread', true);
                         if( $rs_breadcrumbs != 'hide' ):        
                             if(function_exists('bcn_display')){?>
@@ -175,11 +175,11 @@
                                 echo esc_html($content_banner);
                             } else {                                
                                  
-                            if(!empty($lottovite_option['blog_title'])) { ?>
-                                <?php echo esc_html($lottovite_option['blog_title']);?>
+                            if(!empty($lottovibe_option['blog_title'])) { ?>
+                                <?php echo esc_html($lottovibe_option['blog_title']);?>
                                 <?php }
                                 else{
-                                 esc_html_e('Blog','lottovite');
+                                 esc_html_e('Blog','lottovibe');
                                 } 
                             }
                         ?>

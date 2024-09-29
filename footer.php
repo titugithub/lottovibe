@@ -1,7 +1,7 @@
 </div><!-- .main-container -->
 
 <?php
-global $lottovite_option;
+global $lottovibe_option;
 ?>
 <footer>
     <?php
@@ -10,7 +10,7 @@ global $lottovite_option;
 </footer>
 </div><!-- #page -->
 <?php 
-if(!empty($lottovite_option['show_top_bottom'])){
+if(!empty($lottovibe_option['show_top_bottom'])){
 ?>
  <!-- start top-to-bottom  -->
 <div id="top-to-bottom">

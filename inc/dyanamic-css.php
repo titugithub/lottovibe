@@ -4,11 +4,11 @@ Dynamic CSS file. Please don't edit it. It updates automatically when settings c
 */
 
 // Hook the function to wp_head to output dynamic CSS
-add_action('wp_head', 'lottovite_dynamic_colors', 160);
+add_action('wp_head', 'lottovibe_dynamic_colors', 160);
 
-function lottovite_dynamic_colors()
+function lottovibe_dynamic_colors()
 {
-    global $lottovite_option;
+    global $lottovibe_option;
 
     // Helper function to retrieve and sanitize typography properties
     function get_typography($option, $defaults = [])
@@ -23,10 +23,10 @@ function lottovite_dynamic_colors()
     }
 
     // Retrieve color values from Redux options with default fallbacks
-    $body_bg_color   = !empty($lottovite_option['body_bg_color']) ? esc_attr($lottovite_option['body_bg_color']) : '#ffffff'; // White as fallback
-    $body_text_color = !empty($lottovite_option['body_text_color']) ? esc_attr($lottovite_option['body_text_color']) : '#000000'; // Black as fallback
-    $primary_color   = !empty($lottovite_option['primary_color']) ? esc_attr($lottovite_option['primary_color']) : 'rgba(174, 254, 58, 1)'; // Default primary color in rgba
-    $secondary_color = !empty($lottovite_option['secondary_color']) ? esc_attr($lottovite_option['secondary_color']) : 'rgba(85, 74, 255, 1)'; // Default secondary color in rgba
+    $body_bg_color   = !empty($lottovibe_option['body_bg_color']) ? esc_attr($lottovibe_option['body_bg_color']) : '#ffffff'; // White as fallback
+    $body_text_color = !empty($lottovibe_option['body_text_color']) ? esc_attr($lottovibe_option['body_text_color']) : '#000000'; // Black as fallback
+    $primary_color   = !empty($lottovibe_option['primary_color']) ? esc_attr($lottovibe_option['primary_color']) : 'rgba(174, 254, 58, 1)'; // Default primary color in rgba
+    $secondary_color = !empty($lottovibe_option['secondary_color']) ? esc_attr($lottovibe_option['secondary_color']) : 'rgba(85, 74, 255, 1)'; // Default secondary color in rgba
 
     // Typography settings for each heading (H1 to H6)
     $headings = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'];
@@ -34,7 +34,7 @@ function lottovite_dynamic_colors()
 
     foreach ($headings as $heading) {
         $typography_settings[$heading] = get_typography(
-            $lottovite_option["opt-typography-{$heading}"] ?? [],
+            $lottovibe_option["opt-typography-{$heading}"] ?? [],
             ['color' => '', 'font-family' => '', 'font-weight' => '', 'font-size' => '', 'line-height' => '']
         );
     }
@@ -88,130 +88,130 @@ function lottovite_dynamic_colors()
 
 
 
-add_action('wp_head', 'lottovite_custom_colors', 160);
-function lottovite_custom_colors()
+add_action('wp_head', 'lottovibe_custom_colors', 160);
+function lottovibe_custom_colors()
 {
-	global $lottovite_option;
+	global $lottovibe_option;
 	/***styling options
 ------------------*/
 
 
 
 
-	if (!empty($lottovite_option['body_bg_color'])) {
-		$body_bg          = $lottovite_option['body_bg_color'];
+	if (!empty($lottovibe_option['body_bg_color'])) {
+		$body_bg          = $lottovibe_option['body_bg_color'];
 	}
 
-	$site_color       = !empty($lottovite_option['primary_color']) ? $lottovite_option['primary_color'] : '';
-	$secondary_color  = !empty($lottovite_option['secondary_color']) ? $lottovite_option['secondary_color'] : '';
+	$site_color       = !empty($lottovibe_option['primary_color']) ? $lottovibe_option['primary_color'] : '';
+	$secondary_color  = !empty($lottovibe_option['secondary_color']) ? $lottovibe_option['secondary_color'] : '';
 
 
-	$link_color       = !empty($lottovite_option['link_text_color']) ? $lottovite_option['link_text_color'] : '';
-	$link_hover_color = !empty($lottovite_option['link_hover_text_color']) ? $lottovite_option['link_hover_text_color'] : '';
+	$link_color       = !empty($lottovibe_option['link_text_color']) ? $lottovibe_option['link_text_color'] : '';
+	$link_hover_color = !empty($lottovibe_option['link_hover_text_color']) ? $lottovibe_option['link_hover_text_color'] : '';
 
 	//typography extract for body
 
-	$body_typography_font      = !empty($lottovite_option['opt-typography-body']['font-family']) ? $lottovite_option['opt-typography-body']['font-family'] : '';
-	$body_typography_font_size = !empty($lottovite_option['opt-typography-body']['font-size']) ? $lottovite_option['opt-typography-body']['font-size'] : '';
+	$body_typography_font      = !empty($lottovibe_option['opt-typography-body']['font-family']) ? $lottovibe_option['opt-typography-body']['font-family'] : '';
+	$body_typography_font_size = !empty($lottovibe_option['opt-typography-body']['font-size']) ? $lottovibe_option['opt-typography-body']['font-size'] : '';
 
 	//typography extract for menu
-	$menu_typography_color       = !empty($lottovite_option['opt-typography-menu']['color']) ? $lottovite_option['opt-typography-menu']['color'] : '';
-	$menu_typography_weight      = !empty($lottovite_option['opt-typography-menu']['font-weight']) ? $lottovite_option['opt-typography-menu']['font-weight'] : '';
-	$menu_typography_font_family = !empty($lottovite_option['opt-typography-menu']['font-family']) ? $lottovite_option['opt-typography-menu']['font-family'] : '';
-	$menu_typography_font_fsize  = !empty($lottovite_option['opt-typography-menu']['font-size']) ? $lottovite_option['opt-typography-menu']['font-size'] : '';
+	$menu_typography_color       = !empty($lottovibe_option['opt-typography-menu']['color']) ? $lottovibe_option['opt-typography-menu']['color'] : '';
+	$menu_typography_weight      = !empty($lottovibe_option['opt-typography-menu']['font-weight']) ? $lottovibe_option['opt-typography-menu']['font-weight'] : '';
+	$menu_typography_font_family = !empty($lottovibe_option['opt-typography-menu']['font-family']) ? $lottovibe_option['opt-typography-menu']['font-family'] : '';
+	$menu_typography_font_fsize  = !empty($lottovibe_option['opt-typography-menu']['font-size']) ? $lottovibe_option['opt-typography-menu']['font-size'] : '';
 
 	//typography extract for heading
 
-	$h1_typography_color = !empty($lottovite_option['opt-typography-h1']['color']) ? $lottovite_option['opt-typography-h1']['color'] : '';
-	if (!empty($lottovite_option['opt-typography-h1']['font-weight'])) {
-		$h1_typography_weight = $lottovite_option['opt-typography-h1']['font-weight'];
+	$h1_typography_color = !empty($lottovibe_option['opt-typography-h1']['color']) ? $lottovibe_option['opt-typography-h1']['color'] : '';
+	if (!empty($lottovibe_option['opt-typography-h1']['font-weight'])) {
+		$h1_typography_weight = $lottovibe_option['opt-typography-h1']['font-weight'];
 	}
 
-	$h1_typography_font_family = !empty($lottovite_option['opt-typography-h1']['font-family']) ? $lottovite_option['opt-typography-h1']['font-family'] : '';
-	$h1_typography_font_fsize = !empty($lottovite_option['opt-typography-h1']['font-size']) ? $lottovite_option['opt-typography-h1']['font-size'] : '';
+	$h1_typography_font_family = !empty($lottovibe_option['opt-typography-h1']['font-family']) ? $lottovibe_option['opt-typography-h1']['font-family'] : '';
+	$h1_typography_font_fsize = !empty($lottovibe_option['opt-typography-h1']['font-size']) ? $lottovibe_option['opt-typography-h1']['font-size'] : '';
 
-	if (!empty($lottovite_option['opt-typography-h1']['line-height'])) {
-		$h1_typography_line_height = $lottovite_option['opt-typography-h1']['line-height'];
+	if (!empty($lottovibe_option['opt-typography-h1']['line-height'])) {
+		$h1_typography_line_height = $lottovibe_option['opt-typography-h1']['line-height'];
 	}
 
-	$h2_typography_color = !empty($lottovite_option['opt-typography-h2']['color']) ? $lottovite_option['opt-typography-h2']['color'] : '';
+	$h2_typography_color = !empty($lottovibe_option['opt-typography-h2']['color']) ? $lottovibe_option['opt-typography-h2']['color'] : '';
 
-	$h2_typography_font_fsize = !empty($lottovite_option['opt-typography-h2']['font-size']) ? $lottovite_option['opt-typography-h2']['font-size'] : '';
-	if (!empty($lottovite_option['opt-typography-h2']['font-weight'])) {
-		$h2_typography_font_weight = $lottovite_option['opt-typography-h2']['font-weight'];
+	$h2_typography_font_fsize = !empty($lottovibe_option['opt-typography-h2']['font-size']) ? $lottovibe_option['opt-typography-h2']['font-size'] : '';
+	if (!empty($lottovibe_option['opt-typography-h2']['font-weight'])) {
+		$h2_typography_font_weight = $lottovibe_option['opt-typography-h2']['font-weight'];
 	}
 
-	$h2_typography_font_family = !empty($lottovite_option['opt-typography-h2']['font-family']) ? $lottovite_option['opt-typography-h2']['font-family'] : '';
+	$h2_typography_font_family = !empty($lottovibe_option['opt-typography-h2']['font-family']) ? $lottovibe_option['opt-typography-h2']['font-family'] : '';
 
-	$h2_typography_font_fsize = !empty($lottovite_option['opt-typography-h2']['font-size']) ? $lottovite_option['opt-typography-h2']['font-size'] : '';
+	$h2_typography_font_fsize = !empty($lottovibe_option['opt-typography-h2']['font-size']) ? $lottovibe_option['opt-typography-h2']['font-size'] : '';
 
-	if (!empty($lottovite_option['opt-typography-h2']['line-height'])) {
-		$h2_typography_line_height = $lottovite_option['opt-typography-h2']['line-height'];
+	if (!empty($lottovibe_option['opt-typography-h2']['line-height'])) {
+		$h2_typography_line_height = $lottovibe_option['opt-typography-h2']['line-height'];
 	}
 
-	$h3_typography_color = !empty($lottovite_option['opt-typography-h3']['color']) ? $lottovite_option['opt-typography-h3']['color'] : '';
+	$h3_typography_color = !empty($lottovibe_option['opt-typography-h3']['color']) ? $lottovibe_option['opt-typography-h3']['color'] : '';
 
-	if (!empty($lottovite_option['opt-typography-h3']['font-weight'])) {
-		$h3_typography_font_weightt = $lottovite_option['opt-typography-h3']['font-weight'];
+	if (!empty($lottovibe_option['opt-typography-h3']['font-weight'])) {
+		$h3_typography_font_weightt = $lottovibe_option['opt-typography-h3']['font-weight'];
 	}
 
-	$h3_typography_font_family = !empty($lottovite_option['opt-typography-h3']['font-family']) ? $lottovite_option['opt-typography-h3']['font-family'] : '';
+	$h3_typography_font_family = !empty($lottovibe_option['opt-typography-h3']['font-family']) ? $lottovibe_option['opt-typography-h3']['font-family'] : '';
 
-	$h3_typography_font_fsize  = !empty($lottovite_option['opt-typography-h3']['font-size']) ? $lottovite_option['opt-typography-h3']['font-size'] : '';
+	$h3_typography_font_fsize  = !empty($lottovibe_option['opt-typography-h3']['font-size']) ? $lottovibe_option['opt-typography-h3']['font-size'] : '';
 
-	if (!empty($lottovite_option['opt-typography-h3']['line-height'])) {
-		$h3_typography_line_height = $lottovite_option['opt-typography-h3']['line-height'];
+	if (!empty($lottovibe_option['opt-typography-h3']['line-height'])) {
+		$h3_typography_line_height = $lottovibe_option['opt-typography-h3']['line-height'];
 	}
 
-	$h4_typography_color = !empty($lottovite_option['opt-typography-h4']['color']) ? $lottovite_option['opt-typography-h4']['color'] : '';
+	$h4_typography_color = !empty($lottovibe_option['opt-typography-h4']['color']) ? $lottovibe_option['opt-typography-h4']['color'] : '';
 
-	if (!empty($lottovite_option['opt-typography-h4']['font-weight'])) {
-		$h4_typography_font_weight = $lottovite_option['opt-typography-h4']['font-weight'];
+	if (!empty($lottovibe_option['opt-typography-h4']['font-weight'])) {
+		$h4_typography_font_weight = $lottovibe_option['opt-typography-h4']['font-weight'];
 	}
 
-	$h4_typography_font_family = !empty($lottovite_option['opt-typography-h4']['font-family']) ? $lottovite_option['opt-typography-h4']['font-family'] : '';
+	$h4_typography_font_family = !empty($lottovibe_option['opt-typography-h4']['font-family']) ? $lottovibe_option['opt-typography-h4']['font-family'] : '';
 
-	$h4_typography_font_fsize  = !empty($lottovite_option['opt-typography-h4']['font-size']) ? $lottovite_option['opt-typography-h4']['font-size'] : '';
+	$h4_typography_font_fsize  = !empty($lottovibe_option['opt-typography-h4']['font-size']) ? $lottovibe_option['opt-typography-h4']['font-size'] : '';
 
-	if (!empty($lottovite_option['opt-typography-h4']['line-height'])) {
-		$h4_typography_line_height = $lottovite_option['opt-typography-h4']['line-height'];
+	if (!empty($lottovibe_option['opt-typography-h4']['line-height'])) {
+		$h4_typography_line_height = $lottovibe_option['opt-typography-h4']['line-height'];
 	}
 
-	$h5_typography_color = !empty($lottovite_option['opt-typography-h5']['color']) ? $lottovite_option['opt-typography-h5']['color'] : '';
+	$h5_typography_color = !empty($lottovibe_option['opt-typography-h5']['color']) ? $lottovibe_option['opt-typography-h5']['color'] : '';
 
-	if (!empty($lottovite_option['opt-typography-h5']['font-weight'])) {
-		$h5_typography_font_weight = $lottovite_option['opt-typography-h5']['font-weight'];
+	if (!empty($lottovibe_option['opt-typography-h5']['font-weight'])) {
+		$h5_typography_font_weight = $lottovibe_option['opt-typography-h5']['font-weight'];
 	}
 
-	$h5_typography_font_family = !empty($lottovite_option['opt-typography-h5']['font-family']) ? $lottovite_option['opt-typography-h5']['font-family'] : '';
+	$h5_typography_font_family = !empty($lottovibe_option['opt-typography-h5']['font-family']) ? $lottovibe_option['opt-typography-h5']['font-family'] : '';
 
-	$h5_typography_font_fsize  = !empty($lottovite_option['opt-typography-h5']['font-size']) ? $lottovite_option['opt-typography-h5']['font-size'] : '';
+	$h5_typography_font_fsize  = !empty($lottovibe_option['opt-typography-h5']['font-size']) ? $lottovibe_option['opt-typography-h5']['font-size'] : '';
 
-	if (!empty($lottovite_option['opt-typography-h5']['line-height'])) {
-		$h5_typography_line_height = $lottovite_option['opt-typography-h5']['line-height'];
+	if (!empty($lottovibe_option['opt-typography-h5']['line-height'])) {
+		$h5_typography_line_height = $lottovibe_option['opt-typography-h5']['line-height'];
 	}
 
-	$h6_typography_color = !empty($lottovite_option['opt-typography-6']['color']) ? $lottovite_option['opt-typography-6']['color'] : '';
+	$h6_typography_color = !empty($lottovibe_option['opt-typography-6']['color']) ? $lottovibe_option['opt-typography-6']['color'] : '';
 
-	if (!empty($lottovite_option['opt-typography-6']['font-weight'])) {
-		$h6_typography_font_weight = $lottovite_option['opt-typography-6']['font-weight'];
+	if (!empty($lottovibe_option['opt-typography-6']['font-weight'])) {
+		$h6_typography_font_weight = $lottovibe_option['opt-typography-6']['font-weight'];
 	}
 
-	$h6_typography_font_family = !empty($lottovite_option['opt-typography-6']['font-family']) ? $lottovite_option['opt-typography-6']['font-family'] : '';
+	$h6_typography_font_family = !empty($lottovibe_option['opt-typography-6']['font-family']) ? $lottovibe_option['opt-typography-6']['font-family'] : '';
 
-	$h6_typography_font_fsize  = !empty($lottovite_option['opt-typography-6']['font-size']) ? $lottovite_option['opt-typography-6']['font-size'] : '';
+	$h6_typography_font_fsize  = !empty($lottovibe_option['opt-typography-6']['font-size']) ? $lottovibe_option['opt-typography-6']['font-size'] : '';
 
-	if (!empty($lottovite_option['opt-typography-6']['line-height'])) {
-		$h6_typography_line_height = $lottovite_option['opt-typography-6']['line-height'];
+	if (!empty($lottovibe_option['opt-typography-6']['line-height'])) {
+		$h6_typography_line_height = $lottovibe_option['opt-typography-6']['line-height'];
 	}
 
 
-	$body_color  = !empty($lottovite_option['body_text_color']) ? $lottovite_option['body_text_color'] : '';	?>
+	$body_color  = !empty($lottovibe_option['body_text_color']) ? $lottovibe_option['body_text_color'] : '';	?>
 
 	<!-- Typography -->
 	<?php if (!empty($body_color)) {
 
-			global $lottovite_option;
+			global $lottovibe_option;
 			?>
 		<style>
 			body {
@@ -306,18 +306,18 @@ function lottovite_custom_colors()
 
 
 
-			<?php if (!empty($lottovite_option['breadcrumb_top_gap']) && !empty($lottovite_option['breadcrumb_bottom_gap'])) : ?>.svtheme-breadcrumbs .breadcrumbs-inner,
+			<?php if (!empty($lottovibe_option['breadcrumb_top_gap']) && !empty($lottovibe_option['breadcrumb_bottom_gap'])) : ?>.svtheme-breadcrumbs .breadcrumbs-inner,
 			#svtheme-header.header-style-3 .svtheme-breadcrumbs .breadcrumbs-inner {
-				padding-top: <?php echo esc_attr($lottovite_option['breadcrumb_top_gap']); ?>;
-				padding-bottom: <?php echo esc_attr($lottovite_option['breadcrumb_bottom_gap']); ?>;
+				padding-top: <?php echo esc_attr($lottovibe_option['breadcrumb_top_gap']); ?>;
+				padding-bottom: <?php echo esc_attr($lottovibe_option['breadcrumb_bottom_gap']); ?>;
 			}
 
-			<?php endif; ?><?php if (!empty($lottovite_option['mobile_breadcrumb_top_gap']) && !empty($lottovite_option['mobile_breadcrumb_bottom_gap'])) : ?>@media only screen and (max-width: 767px) {
+			<?php endif; ?><?php if (!empty($lottovibe_option['mobile_breadcrumb_top_gap']) && !empty($lottovibe_option['mobile_breadcrumb_bottom_gap'])) : ?>@media only screen and (max-width: 767px) {
 
 				.svtheme-breadcrumbs .breadcrumbs-inner,
 				#svtheme-header.header-style-3 .svtheme-breadcrumbs .breadcrumbs-inner {
-					padding-top: <?php echo esc_attr($lottovite_option['mobile_breadcrumb_top_gap']); ?>;
-					padding-bottom: <?php echo esc_attr($lottovite_option['mobile_breadcrumb_bottom_gap']); ?>;
+					padding-top: <?php echo esc_attr($lottovibe_option['mobile_breadcrumb_top_gap']); ?>;
+					padding-bottom: <?php echo esc_attr($lottovibe_option['mobile_breadcrumb_bottom_gap']); ?>;
 				}
 			}
 
@@ -365,22 +365,22 @@ function lottovite_custom_colors()
 			}
 
 
-			<?php if (!empty($lottovite_option['container_size'])) : ?>@media only screen and (min-width: 1300px) {
+			<?php if (!empty($lottovibe_option['container_size'])) : ?>@media only screen and (min-width: 1300px) {
 				.container {
-					max-width: <?php echo esc_attr($lottovite_option['container_size']); ?>;
+					max-width: <?php echo esc_attr($lottovibe_option['container_size']); ?>;
 				}
 			}
 
-			<?php endif; ?><?php if (!empty($lottovite_option['preloader_bg_color'])) : ?>#lottovite-load {
-				background: <?php echo sanitize_hex_color($lottovite_option['preloader_bg_color']); ?>;
+			<?php endif; ?><?php if (!empty($lottovibe_option['preloader_bg_color'])) : ?>#lottovibe-load {
+				background: <?php echo sanitize_hex_color($lottovibe_option['preloader_bg_color']); ?>;
 			}
 
-			<?php endif; ?><?php if (!empty($lottovite_option['page_title_color'])) : ?>.svtheme-breadcrumbs .page-title {
-				color: <?php echo sanitize_hex_color($lottovite_option['page_title_color']); ?> !important;
+			<?php endif; ?><?php if (!empty($lottovibe_option['page_title_color'])) : ?>.svtheme-breadcrumbs .page-title {
+				color: <?php echo sanitize_hex_color($lottovibe_option['page_title_color']); ?> !important;
 			}
 
-			<?php endif; ?><?php if (!empty($lottovite_option['body_bg_color'])) : ?>body.archive.tax-product_cat {
-				background: <?php echo sanitize_hex_color($lottovite_option['body_bg_color']); ?> !important;
+			<?php endif; ?><?php if (!empty($lottovibe_option['body_bg_color'])) : ?>body.archive.tax-product_cat {
+				background: <?php echo sanitize_hex_color($lottovibe_option['body_bg_color']); ?> !important;
 			}
 
 			<?php endif; ?>

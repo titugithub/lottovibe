@@ -4,7 +4,7 @@
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="//gmpg.org/xfn/11">
-<?php global $lottovite_option; ?>
+<?php global $lottovibe_option; ?>
 <?php wp_head(); ?>
 </head>
 
@@ -27,7 +27,7 @@
         $gap = 'footer-bottom-gaps';
     }?>
     <?php        
-        $extrapadding = !empty($lottovite_option['show_call_btns']) ? '' : 'lesspadding';      
+        $extrapadding = !empty($lottovibe_option['show_call_btns']) ? '' : 'lesspadding';      
     ?>
     <div id="page" class="site <?php echo esc_attr( $gap );?> <?php echo esc_attr($extrapadding);?>">
         <?php

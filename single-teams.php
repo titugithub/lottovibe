@@ -1,6 +1,6 @@
 <?php
     get_header();
-    global $lottovite_option;
+    global $lottovibe_option;
 	//take metafield value            
    ?>
    <div class="container">
@@ -51,7 +51,7 @@
                             <i class="rt-envelope"></i>
                         </div>
                         <div class="address-content">
-                            <span class="fs-14"><?php echo esc_html__("Email Address",'lottovite');?></span>                                  
+                            <span class="fs-14"><?php echo esc_html__("Email Address",'lottovibe');?></span>                                  
                             <h5 class="fs-20"> <?php echo esc_html($email); ?></h5>
                         </div>
                     </div>
@@ -63,7 +63,7 @@
                             <i class="rt-phone-volume"></i>
                         </div>
                         <div class="address-content">
-                            <span class="fs-14"><?php echo esc_html__("Phone Number",'lottovite');?></span>
+                            <span class="fs-14"><?php echo esc_html__("Phone Number",'lottovibe');?></span>
                             <h5 class="fs-20"> <?php echo esc_html($phone); ?></h5>
                         </div>
                     </div>
@@ -75,7 +75,7 @@
                             <i class="rt-location-dot"></i>
                         </div>
                         <div class="address-content">
-                            <span class="fs-14"><?php echo esc_html__("Location",'lottovite');?></span>
+                            <span class="fs-14"><?php echo esc_html__("Location",'lottovibe');?></span>
                             <h5 class="fs-20"><?php echo esc_html( $location );?></h5>
                         </div>
 

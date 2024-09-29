@@ -1,7 +1,7 @@
 <?php 
-global $lottovite_option;
+global $lottovibe_option;
 $rs_offcanvas = get_post_meta(get_the_ID(), 'show-off-canvas', true);
-$logo_height = !empty($lottovite_option['logo-height']) ? 'style = "max-height: '.$lottovite_option['logo-height'].'"' : '';
+$logo_height = !empty($lottovibe_option['logo-height']) ? 'style = "max-height: '.$lottovibe_option['logo-height'].'"' : '';
     //off convas here
 ?>
     

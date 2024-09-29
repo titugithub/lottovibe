@@ -1,5 +1,5 @@
 <?php
-global $lottovite_option;
+global $lottovibe_option;
 ?>
 <nav class="nav-container mobile-menu-container mobile-menus menu-wrap-off">
     <ul class="sidenav">

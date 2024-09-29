@@ -9,7 +9,7 @@
         <?php
             the_content();
             wp_link_pages( array(
-              'before'      => '<div class="page-links">' . esc_html__( 'Pages:', 'lottovite' ),
+              'before'      => '<div class="page-links">' . esc_html__( 'Pages:', 'lottovibe' ),
               'after'       => '</div>',
               'link_before' => '<span class="page-number">',
               'link_after'  => '</span>',
@@ -23,7 +23,7 @@
                     //tag add
                     $seperator = ''; // blank instead of comma
                     $after     = '';
-                    echo esc_html__( 'Tags: ', 'lottovite' );
+                    echo esc_html__( 'Tags: ', 'lottovibe' );
                     the_tags( '', $seperator, $after );
                 ?>             
             </div> 
