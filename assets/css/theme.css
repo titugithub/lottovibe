@@ -2259,15 +2259,7 @@ article.sticky .blog-title:hover a:after {
   font-size: 16px;
   outline: none;
 }
-.search-no-results .no-results .search-form button:before {
-  font-family: "rt-icons";
-  font-size: 16px;
-  content: "\e819";
-  position: absolute;
-  right: 20px;
-  top: 11px;
-  color: #fff;
-}
+
 
 /* ------------------------------------
     24. Blog Pagination

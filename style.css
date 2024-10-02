@@ -1307,9 +1307,7 @@ span.elementor-edit-link-title {
 .banner-section-v3 ul {
   list-style: none !important;
 }
-.barsection .phone-thumb img {
-  width: unset;
-}
+
 .barsection .smar-phonewrap {
   text-align: center;
 }
@@ -1493,7 +1491,7 @@ span.price span {
 .svtheme-blog-details h3 {
   margin: 18px 0;
 }
-.svtheme-blog-details h4, h5, h6 {
+.svtheme-blog-details h4,.svtheme-blog-details h5,.svtheme-blog-details h6 {
   margin: 16px 0;
 }
 
@@ -1628,4 +1626,12 @@ body.woocommerce-js ul.products li {
 
 .summary.entry-summary del span {
   text-decoration: line-through;
+}
+
+.cycle .thumb img{
+  width: 100% !important;
+}
+
+ul.list-unstyled.remaining-info.px-xxl-6.px-xl-5.px-lg-4.px-3.pt-xxl-6.pt-4.d-flex.align-items-center.gap-xxl-5.gap-lg-3.gap-2 li{
+  font-size: 16px !important;
 }
