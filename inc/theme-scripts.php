@@ -5,7 +5,7 @@ function lottovibe_scripts() {
 	wp_enqueue_style( 'custom-google-fonts', 'https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,500;6..12,600;6..12,700;6..12,800;6..12,900&display=swap', false ); 
 	wp_enqueue_style( 'boostrap', get_template_directory_uri() .'/assets/css/bootstrap.min.css' );	
 	wp_enqueue_style( 'rt-icons', get_template_directory_uri() .'/assets/css/rt-icons.css');
-	wp_enqueue_style( 'font-awesome-all', get_template_directory_uri() .'/assets/css/font-awesome.min.css');
+	wp_enqueue_style( 'font-awesome-all', get_template_directory_uri() .'/assets/css/plugins/fontawesome.min.css');
 	wp_enqueue_style( 'tabler-icons', get_template_directory_uri() .'/assets/css/tabler-icons.min.css');
     wp_enqueue_style( 'magnific-popup', get_template_directory_uri() .'/assets/css/magnific-popup.css');
 	wp_enqueue_style( 'swiperrrr', get_template_directory_uri().'/assets/css/plugins/swiper.min.css' );
@@ -16,10 +16,9 @@ function lottovibe_scripts() {
 	wp_enqueue_style( 'lottovibe-style', get_stylesheet_uri() );		
 
 
-	// wp_enqueue_script( 'ggggg', get_template_directory_uri() . '/assets/js/plugins/jquery.js', array('jquery'), '', true );
-	// wp_enqueue_script( 'matter', get_template_directory_uri() . '/assets/js/matter.js', array('jquery'), '2.8.3', true );
+
 	wp_enqueue_script( 'matter-custom', get_template_directory_uri() . '/assets/js/plugins/matter-custom.js', array('jquery'), '2.8.3', true );
-	wp_enqueue_script( 'swiperr', get_template_directory_uri() . '/assets/js/plugins/swiper.js', array('jquery'), '2.8.3', true );
+	wp_enqueue_script( 'swiperr-js', get_template_directory_uri() . '/assets/js/plugins/swiper-bundle.min.js', array('jquery'), '2.8.3', true );
 	wp_enqueue_script( 'viewpot', get_template_directory_uri() . '/assets/js/plugins/viewpot.js', array('jquery'), '2.8.3', true );
 	wp_enqueue_script( 'viewfpot', get_template_directory_uri() . '/assets/js/bootstrap.min.js', array('jquery'), '2.8.3', true );
 	wp_enqueue_script( 'aos', get_template_directory_uri() . '/assets/js/plugins/aos.js', array('jquery'), '2.8.3', true );
@@ -34,7 +33,6 @@ function lottovibe_scripts() {
 
 
 	wp_enqueue_script( 'modernizr', get_template_directory_uri() . '/assets/js/modernizr-2.8.3.min.js', array('jquery'), '2.8.3', true );
-	// wp_enqueue_script( 'swiper', get_template_directory_uri().'/assets/js/swiper-bundle.min.js', array('jquery'), '8.2.3');
 	wp_enqueue_script( 'wow', get_template_directory_uri().'/assets/js/wow.min.js', array('jquery'), '1.1.2');
 	
 	wp_enqueue_script( 'jquery-counterup', get_template_directory_uri() . '/assets/js/jquery.counterup.min.js', array('jquery'), '1.0', true );

@@ -9,6 +9,12 @@
 </head>
 
 <body <?php body_class(); ?>>
+
+
+<div class="mouse-follower">
+        <span class="cursor-outline"></span>
+        <span class="cursor-dot"></span>
+    </div>
   
    <div class="close-button body-close"></div>   
     <!--Preloader start here-->

@@ -360,6 +360,20 @@ add_filter('get_search_form', 'custom_search_form');
 
 add_filter('wpcf7_autop_or_not', '__return_false');
 
+function add_custom_cursor_code() {
+    if ( ! is_user_logged_in() ) { // Only add the cursor for non-logged-in users
+        ?>
+        <!-- ==== Custom Cursor Pointer ==== -->
+        <div class="mouse-follower">
+            <span class="cursor-outline"></span>
+            <span class="cursor-dot"></span>
+        </div>
+        <!-- ==== Custom Cursor Pointer ==== -->
+        <?php
+    }
+}
+add_action('wp_footer', 'add_custom_cursor_code');
+
 
 
 

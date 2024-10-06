@@ -1,4 +1,6 @@
-(function($) {
+jQuery(function ($) {
+  "use strict";
+  jQuery(document).ready(function () {
   // =================Start default js===============================//
 
   if ($("body").hasClass("post-type-archive-product")) {
@@ -1239,4 +1241,5 @@
   });
 
   // count down timer
-})(jQuery);
+});
+});
